@@ -1,0 +1,859 @@
+body{
+    font-size: 10px;
+    font-family: "微软雅黑";
+}
+/*-----------------------------------------------------清浮动-----------------------------------------------------*/
+
+.clearfix:before, .clearfix:after {
+    display: table;
+    content: '';
+}
+
+.clearfix:after {
+    clear: both;
+}
+/*-----------------------------------------------------登录注册-----------------------------------------------------*/
+.login-register{
+    width: 20rem;
+    height: 5rem;
+    position:fixed;
+    right: 2rem;
+    top: 2.5rem;
+    z-index: 500;
+}
+.user-btn{
+    width: 5rem;
+    height: 5rem;
+    text-decoration: none;
+    border-radius: 50%;
+    background: #ffc000;
+    line-height: 5rem;
+    text-align: center;
+    display: block;
+    font-size: 2rem;
+    color: #fff;
+    float: right;
+    position: relative;
+    left: 2.5rem;
+    border:2px solid #fff;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+.user-btn:hover,.user-btn:active,.user-btn:link,.user-btn:visited{
+    color: #fff;
+}
+.login-register-btns{
+    background: #fff;
+    width: 0;
+    height: 5rem;
+    border:.2rem solid #eee;
+    float: right;
+    border-radius: 0 5rem 5rem 0;
+    overflow: hidden;
+    padding-left: 2rem;
+    line-height: 5rem;
+}
+.login-register-btns a{
+    text-decoration: none;
+    color: #c6c6c6;
+    margin-left: 2rem;
+    font-size: 1.3rem;
+}
+.login-register-btns a:hover{
+    color: #ffc000;
+}
+.user-operation{
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0;
+    position: relative;
+    right: 1.8rem;
+    display: none;
+}
+.user-operation p{
+    width: 75%;
+    color: #ffc000;
+    font-size: 1.6rem;
+    text-indent:1rem;
+    float: left;
+}
+.user-operation span{
+    float: right;
+    margin: 1.8rem 1.5rem 0 0;
+    color: #ffc000;
+}
+.user-news{
+    width: 17.1rem;
+    height: 15rem;;
+    background: #fff;
+    position: fixed;
+    z-index: 9999;
+    right: 2rem;
+    top: 8rem;
+    border-radius: .5rem;
+    display: none;
+    overflow: hidden;
+}
+.user-news a{
+    width: 100%;
+    height: 50%;
+    display: block;
+    text-decoration: none;
+    color: #ffc000;
+    line-height: 7.5rem;
+    font-size: 1.6rem;
+    padding-left: 4rem;
+}
+.user-news a:hover{
+    background: #ffc000;
+    color: #fff;
+    border-color: #ffc000;
+}
+.personal{
+    border:2px solid #eee;
+    border-bottom:none;
+    border-radius: .5rem .5rem 0 0;
+}
+.layout{
+    border:2px solid #eee;
+    border-top: none;
+    border-radius: 0 0 .5rem .5rem;
+}
+.user-news a span{
+    margin-right: 1rem;
+    position: relative;
+    top: .2rem;
+}
+#login,#register{
+    width: 50rem;
+    height: 22rem;
+    box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
+    position: fixed;
+    background: #fff;
+    left: 50%;
+    margin-left: -25rem;
+    top: 16rem;
+    display: none;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    border-radius: 5px;
+    z-index: 9999;
+    padding: 19px 55px;;
+}
+#register{
+    height: 25.5rem;
+}
+#login h1,#register h1{
+    color: #7E7E7E;
+    text-align: center;
+    letter-spacing: -0.05em;
+    line-height: 2rem;
+    margin-bottom: 2.5rem;
+}
+#login h1:before,
+#login h1:after,
+#register h1:before,
+#register h1:after{
+	content:"";
+	height:1px;
+	position:absolute;
+	top:47px;
+	width:35%;
+}
+
+#login h1:after,#register h1:after{
+	background:rgb(126,126,126);
+	background:-moz-linear-gradient(left,rgba(126,126,126,1) 0%,rgba(255,255,255,1) 100%);
+	background:-webkit-linear-gradient(left,rgba(126,126,126,1) 0%,rgba(255,255,255,1) 100%);
+	background:-moz-linear-gradient(left,rgba(126,126,126,1) 0%,rgba(255,255,255,1) 100%);
+	background:-ms-linear-gradient(left,rgba(126,126,126,1) 0%,rgba(255,255,255,1) 100%);
+	background:linear-gradient(left,rgba(126,126,126,1) 0%,rgba(255,255,255,1) 100%);
+	right:0px;
+}
+
+#login h1:before,#register h1:before{
+	background:rgb(126,126,126);
+	background:-moz-linear-gradient(right,rgba(126,126,126,1) 0%,rgba(255,255,255,1) 100%);
+	background:-webkit-linear-gradient(right,rgba(126,126,126,1) 0%,rgba(255,255,255,1) 100%);
+	background:-moz-linear-gradient(right,rgba(126,126,126,1) 0%,rgba(255,255,255,1) 100%);
+	background:-ms-linear-gradient(right,rgba(126,126,126,1) 0%,rgba(255,255,255,1) 100%);
+	background:linear-gradient(right,rgba(126,126,126,1) 0%,rgba(255,255,255,1) 100%);
+	left:0px;
+}
+.username,.password,.password-again{
+    width: 100%;
+    height: 3.5rem;
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
+}
+.username span,.password span,.password-again span{
+    height: 100%;
+    width: 2.5rem;
+    display: block;
+    float: left;
+    line-height: 3.5rem;
+    margin-right: 2.5rem;
+}
+.username input,.password input,.password-again input{
+    width: calc(100% - 7.5rem);
+    float:left;
+    border:none;
+    border-bottom:3px solid #999;
+    outline: none;
+    background: none;
+    font-size:1.6rem;
+    color: #999;
+    position: relative;
+    z-index: 10;
+}
+.loginB,.registerB{
+    width: 6rem;
+    height:6rem;
+    border-radius: 50%;
+    background: #FFE434;
+    background-image: url(../imgs/right-arrow.png);
+    background-size: 50% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.27);
+    position: absolute;
+    top: 8.2rem;
+    right: -2.5rem;
+    border:none;
+    outline: none;
+    transition: .3s all ease-in-out;
+}
+.registerB{
+    top: 10rem;
+    background-color: #f44336;
+}
+.loginB:hover,.registerB:hover{
+    right: -2rem;
+}
+#login a,#register a{
+    text-decoration: none;
+    color: #999;
+    position: absolute;
+    font-size:1.8rem;
+    right: 2rem;
+    top: 1rem;
+    transition: .3s all ease-in-out;
+}
+#login a:hover,#register a:hover{
+    transform:scale(1.2,1.2);
+}
+.prompt-login{
+    display: none;
+    opacity: 0;
+    color: #f44336;
+    position: absolute;
+    z-index: 1;
+    font-size: 1.4rem;
+    right: 6.5rem;/*7.9rem 对齐*/
+    bottom:5.3rem;/*10.4rem 与用户名对齐*/
+}
+.prompt-register{
+    display: none;
+    opacity: 0;
+    color: #f44336;
+    font-size: 1.4rem;
+    position: absolute;
+    z-index: 1;
+    right: 6.5rem;/*7.9rem 对齐*/
+    bottom:13.9rem;/*3.8与again对齐，9rem与密码对齐*/
+}
+/*-----------------------------------------------------顶部-----------------------------------------------------*/
+.top{
+    width: 100%;
+    height: 50rem;
+    background: #ffc000;
+}
+.top h1{
+    font-family: "微软雅黑";
+    font-weight: 700;
+    color:#fff;
+    text-align: center;
+    margin-top: 12rem;
+}
+/*-----------------------------------------------------导航-----------------------------------------------------*/
+.nav{
+    width: 80rem;
+    margin: 0 auto;
+    height: 10rem;
+    padding-left: 25rem;
+    background-image: url(../imgs/logo.png);
+    background-repeat: no-repeat;
+    background-size: 20rem auto;
+    background-position: 9.5rem -4rem;
+}
+.nav ul {
+    margin: 0;
+    padding-left: 0;
+}
+.nav ul li{
+    list-style: none;
+    float: left;
+    width: 10rem;
+    height: 100%;
+    line-height: 8rem;
+}
+.nav ul li a{
+    display: block;
+    width:100%;
+    height: 100%;
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+    font-family: "微软雅黑";
+}
+.nav ul li a:hover{
+    background: #eaa90d;
+}
+.nav-btn{
+    width: 4rem;
+    height: 4rem;
+    background: #fff;
+    border-radius: .5rem;
+    position: fixed;
+    left: 2rem;
+    top: 3rem;
+    padding-top: .6rem;
+    padding-left: .4rem;
+    border:1px solid #ffc000;
+    z-index: 999;
+    display: none;
+}
+.nav-btn a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: .5rem;
+}
+.line1{
+    width: 90%;
+    height: .6rem;
+    background: #ffc000;
+    float: left;
+    margin-bottom: .5rem;
+}
+.line2{
+    width: 90%;
+    height: .65rem;
+    background: #ffc000;
+    float: left;
+
+}
+/*-----------------------------------------------------搜索框-----------------------------------------------------*/
+.search{
+    width: 100%;
+    text-align:center;
+    margin-top: 5.5rem;
+}
+.search-container{
+    width: 54rem;
+    margin: 0 auto;
+}
+.search input{
+    width: 50rem;
+    height: 4rem;
+    border:none;
+    outline: none;
+    text-indent: 3.2rem;
+    font-size: 1.6rem;
+    float: left;
+    border-radius:1rem 0 0 1rem;
+}
+.search-container a{
+    height: 4rem;
+    border:.2rem solid #fff;
+    margin-left: 40rem;
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 4rem;
+    text-decoration: none;
+    color: #fff;
+    border-radius:0 1rem 1rem 0;
+}
+/*-----------------------------------------------------热门食物-----------------------------------------------------*/
+#hot-food{
+    width: 100%;
+    padding: 0 10%;
+    font-family: "微软雅黑";
+    padding-bottom:5rem;
+}
+.hot-food-top{
+    width:100%;
+    padding-top:7rem;
+}
+.hot-food-top .title{
+    width: 50%;
+    float: left;
+}
+.hot-food-top .title .title-b{
+    width: 100%;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.hot-food-top .title .title-s{
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #999;
+}
+.hot-food-top-r{
+    width: 50%;
+    float: right;
+}
+.top-circle1,.top-circle2,.top-circle3,.top-circle4{
+    font-size: 2.5rem;
+    text-align: center;
+    line-height: 14rem;
+    color: #fff;
+    font-weight: 700;
+}
+.top-circle1 span,.top-circle2 span,.top-circle3 span,.top-circle4 span{
+    position: relative;
+    z-index: 100;
+}
+.top-circle1{
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: #3CC4C9;
+    float: right;
+    position: relative;
+    left: 9rem;
+    z-index: 1;
+}
+.top-circle1:after{
+    content:'';
+    display: block;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 1rem;
+    background: #3CC4C9;
+    position: relative;
+    left: 7rem;
+    bottom:7rem;
+}
+.top-circle2{
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: #ffc000;
+    float: right;
+    position: relative;
+    left: 6rem;
+    z-index: 2;
+}
+.top-circle2:after{
+    content:'';
+    display: block;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 1rem;
+    background: #ffc000;
+    position: relative;
+    left: 7rem;
+    bottom:7rem;
+}
+.top-circle3{
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: #F06D68;
+    float: right;
+    position: relative;
+    left: 3rem;
+    z-index: 3;
+}
+.top-circle3:after{
+    content:'';
+    display: block;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 1rem;
+    background: #F06D68;
+    position: relative;
+    left: 7rem;
+    bottom:7rem;
+}
+.top-circle4{
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: #366972;
+    float: right;
+    position: relative;
+    z-index: 4;
+}
+.top-circle4:after{
+    content:'';
+    display: block;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 1rem;
+    background: #366972;
+    position: relative;
+    left: 7rem;
+    bottom:7rem;
+}
+.more{
+    width: 20rem;
+    height: 4rem;
+    background: #ffc000;
+    border-radius: 2rem;
+    float: right;
+    margin:1.6rem 4rem 0 0;
+}
+.more a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+    line-height: 3.7rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color:#fff;
+    border-radius: 2rem;
+    border:2px solid transparent;
+    text-decoration: none;
+}
+.more a:hover{
+    background: #fff;
+    color: #ffc000;
+    border:2px solid #ffc000;
+}
+.rank{
+    width: 40rem;
+    height: 42rem;
+    background: #366972;
+    margin-top: 6rem;
+    padding-top: 2rem;
+    float: left;
+}
+.rank-title{
+    width: 100%;
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 700;
+    padding-left: 2rem;
+    margin-bottom:1rem;
+}
+.rank ul{
+    margin:0;
+    padding-left: 0;
+}
+.rank ul li{
+    width: 100%;
+    height: 3.5rem;
+    list-style: none;
+    font-size: 1.8rem;
+    line-height: 3.5rem;
+}
+.rank ul li a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding-left: 2rem;
+}
+.rank ul li a:hover{
+    background: #145E69;
+}
+.swiper-container{
+    width: 60rem;
+    height:42rem;
+    margin-top: 6rem!important;
+    float: right;
+}
+.slide1{
+    background: url(../imgs/food1.jpg);
+}
+.slide2{
+    background: url(../imgs/food2.jpg);
+}
+.slide3{
+    background: url(../imgs/food3.jpg);
+}
+.swiper-slide{
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+/*-----------------------------------------------------所有美食-----------------------------------------------------*/
+#all{
+    width: 100%;
+    padding:0 10%;
+}
+.screen{
+    width:100%;
+    height:5rem;
+    background:#ffc000;
+    padding: 1rem 0 0 1rem;
+    margin-bottom:3rem;
+}
+.screen ul{
+    margin: 0;
+    padding-left:0;
+}
+.screen ul li{
+    list-style: none;
+    float: left;
+    width:7rem;
+    height: 3rem;
+    margin-left: 2rem;
+    border-radius: .5rem;
+    line-height: 3rem;
+}
+.screen ul li a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+    border-radius: .5rem;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.6rem;
+    color: #fff;
+}
+.screen-selected{
+    background: #fff;
+    color: #ffc000!important;
+}
+/*------------------------------------------------- 瀑布流布局--------------------------------------------*/
+.container-fluid {
+    margin: 0 auto;
+    padding: 0;
+}
+.box {
+    width: 25rem;
+    padding: 1rem; 
+    margin:  0 0 1rem;
+    border:1px solid #c6c6c6;
+}
+.box img {
+    width: 100%;
+}
+.food-news{
+    width: 100%;
+    font-family: "宋体";
+}
+.food-name{
+    width: 100%;
+    float: left;
+    font-size: 1.3rem;
+    color: #898686;
+    margin-top: .5rem;
+    border-bottom:1px solid #c6c6c6;
+    line-height: 2.5rem;
+}
+.food-views{
+    width: 30%;
+    float: left;
+    font-size: 1.1rem;
+    color: #999;
+    margin: 0;
+}
+.food-views font{
+    color: #ffc000;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-right: .2rem;
+}
+.time-author{
+    float: right;
+    color: #999;
+    font-size: 1.1rem;
+}
+/*------------------------------------------------- 底部--------------------------------------------*/
+.bottom{
+    width: 100%;
+    padding: 3rem 0;
+    text-align: center;
+    background: #ffc000;
+    color: #fff;
+}
+/*------------------------------------------------- 响应--------------------------------------------*/
+@media screen and (max-width: 1400px){
+    #hot-food,#all{
+        padding-left:5%;
+        padding-right: 5%;
+    }
+    .hot-food-top .title .title-b{
+        width: 100%;
+        font-size: 2.5rem;
+    }
+    .hot-food-top .title .title-s{
+        font-size: 1.2rem;
+    }
+    .top-circle1,.top-circle2,.top-circle3,.top-circle4{
+        width: 10rem;
+        height:10rem;
+        font-size: 2rem;
+        line-height: 10rem;
+    }
+    .top-circle1:after, .top-circle2:after, .top-circle3:after, .top-circle4:after{
+        width: 5.2rem;
+        height: 5.1rem;
+        left: 4.8rem;
+        bottom:5rem;
+    }
+    .top-circle1{
+        left: 6rem;
+    }
+    .top-circle2{
+        left: 4rem;
+    }
+    .top-circle3{
+        left: 2rem;
+    }
+    .more{
+        width: 15rem;
+        height: 3rem;
+        margin:  0 5rem 0 0;
+    }
+    .more a{
+        line-height: 3rem;
+        font-size: 1.6rem;
+
+    }
+    .rank{
+        width: 35rem;;
+    }
+    .swiper-container{
+        width: 55rem;
+    }
+}
+@media screen and (max-width: 1200px){
+    .rank{
+        width: 30rem;
+    }
+    .swiper-container{
+        width: 50rem;
+    }
+}
+@media screen and (max-width: 900px){
+    .hot-food-top .title{
+        width: 100%;
+        text-align: center;
+        padding-bottom:5rem;
+    }
+    .more{
+        margin: 0 auto;
+        float: none;
+    }
+    .hot-food-top-r{
+        width: 100%;
+        text-align: center;
+    }
+    .top-circle1,.top-circle2,.top-circle3,.top-circle4{
+        display: inline-block;
+        float: none;
+    }
+    .rank{
+        width: 80%;
+        margin: 5rem auto;
+        float: none;
+    }
+    .swiper-container{
+        width: 80%;
+        margin: 0 auto;
+        float:none;
+    }
+    .nav-btn{
+        display: block;
+    }
+    .nav{
+        width: 4rem;
+        height: 0;
+        padding: 0;
+        margin: 0;
+        position: fixed;
+        left: 2rem;
+        top: 7.1rem;
+        background-image: none;
+        overflow: hidden;
+        z-index: 999;
+    }
+    .nav ul li{
+        width: 4rem;
+        height: 4rem;
+        background: #fff;
+        margin-top: .2rem;
+        border:1px solid #ffc000;;
+    }
+    .nav ul li a{
+        line-height: 4rem;
+        color: #ffc000;
+        font-size: 1.6rem;
+    }
+    .nav ul li a:hover{
+        background: none;
+        color: none;
+    }
+    .top{
+        padding-top: 30rem;
+        background-image: url(../imgs/logo.png);
+        background-repeat: no-repeat;
+        background-size: 24rem auto;
+        background-position: 50% 10rem;;
+    }
+    .top h1{
+        margin: 0;
+    }
+}
+@media screen and (max-width: 600px){
+    .hot-food-top .title .title-b{
+        font-size: 2rem;
+    }
+    .hot-food-top .title .title-s{
+        font-size: 1rem;
+    }
+    .top-circle1,.top-circle2,.top-circle3,.top-circle4{
+        width: 8rem;
+        height: 8rem;
+        left: 0;
+        line-height: 8rem;
+    }
+    .top-circle1:after,.top-circle2:after,.top-circle3:after,.top-circle4:after{
+        display: none;
+    }
+    .top h1{
+        font-size: 2.5rem;
+    }
+    .search-container{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .search-container input{
+        width: calc(100% - 4rem);
+        float: left;
+        font-size: 1.4rem;
+    }
+    .search-btn{
+        width: 4rem;
+        float: right;
+        margin: 0!important;
+    }
+    #login,#register{
+        margin: 0;
+        width: 80%;
+        left: 10%;
+    }
+}
+@media screen and (max-width: 450px){
+    #login,#register{
+        padding-left: 1rem;
+        padding-right: 2rem;
+    }
+    #login span,#register span{
+        position:relative;
+        left: 1.6rem;
+    }
+}

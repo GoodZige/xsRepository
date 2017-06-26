@@ -1,0 +1,447 @@
+html,body{
+  height: 100%;
+  font-size:10px;
+  font-family: "微软雅黑";
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  min-height: 70rem;
+  color: #fff;
+  text-align: center;
+}
+.side1 {
+  background-image:url(../imgs/side1-bg.png),linear-gradient(#0CBCF2, #ADFFF5);
+  background-size: 1560px auto;
+  background-position: center 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.side1 h1{
+  text-shadow: 0px 0px 10px #999;
+  font-size: 60px;
+  margin-top: 150px;
+  font-weight: 700;
+}
+/*---------------------------------------------------模块1------------------------------------------------------*/
+.sun{
+  width: 100px;
+  height: 100px;
+  background-image: url(../imgs/sun.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  -webkit-animation:windmill 10s infinite linear;
+  -moz-animation:windmill 10s infinite linear;
+  -o-animation:windmill 10s infinite linear;
+  -ms-animation:windmill 10s infinite linear;
+}
+.stone1{
+  width: 120px;
+  height: 200px;
+  background-image: url(../imgs/stone1.png);
+  background-repeat: no-repeat;
+  background-position: center 76px;
+  position: absolute;
+  left: 5%;
+  bottom:79px;
+}
+.stone2{
+  width: 150px;
+  height: 200px;
+  position: absolute;
+  bottom:79px;
+  background-image: url(../imgs/stone2.png);
+  background-repeat: no-repeat;
+  right: 55%;
+  background-position: center 50px;
+}
+.stone3{
+  width: 220px;
+  height: 200px;
+  background-image:url(../imgs/stone3.png);
+  background-repeat: no-repeat;
+  background-position: center 40px;
+  right: 15%;
+  position: absolute;
+  bottom:79px;
+}
+.house{
+  width: 340px;
+  height: 300px;
+  position: absolute;
+  bottom:79px;
+  background-image: url(../imgs/house.png);
+  background-repeat: no-repeat;
+  right: 35%;
+  background-position: center 40px;
+}
+.house img{
+  position: relative;
+  right: 1px;
+  bottom:30px;
+  -webkit-animation:windmill 7s infinite linear;
+  -moz-animation:windmill 7s infinite linear;
+  -o-animation:windmill 7s infinite linear;
+  -ms-animation:windmill 7s infinite linear;
+}
+.car{
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  right: -400px;
+  bottom:0;
+  background-image:url(../imgs/car.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-animation:car 7s infinite linear;
+  -moz-animation:car 7s infinite linear;
+  -o-animation:car 7s infinite linear;
+  -ms-animation:car 7s infinite linear;
+}
+@-webkit-keyframes windmill{
+  0%{
+    -webkit-transform:rotate(0deg);
+  }
+  100%{
+    -webkit-transform:rotate(360deg);
+  }
+}
+@-moz-keyframes windmill{
+  0%{
+    -moz-transform:rotate(0deg);
+  }
+  100%{
+    -moz-transform:rotate(360deg);
+  }
+}
+@-o-keyframes windmill{
+  0%{
+    -o-transform:rotate(0deg);
+  }
+  100%{
+    -o-transform:rotate(360deg);
+  }
+}
+@-ms-keyframes windmill{
+  0%{
+    -ms-transform:rotate(0deg);
+  }
+  100%{
+    -ms-transform:rotate(360deg);
+  }
+}
+
+@-webkit-keyframes car{
+  0%{
+    right: -400px;
+  }
+  100%{
+    right: 2000px;
+  }
+}
+@-moz-keyframes car{
+  0%{
+    right: -400px;
+  }
+  100%{
+    right: 2000px;
+  }
+}
+@-o-keyframes car{
+  0%{
+    right: -400px;
+  }
+  100%{
+    right: 2000px;
+  }
+}
+@-ms-keyframes car{
+  0%{
+    right: -400px;
+  }
+  100%{
+    right: 2000px;
+  }
+}
+/*---------------------------------------------------模块2------------------------------------------------------*/
+.side2{
+  background: linear-gradient(#1767C3, #559CE9);
+  position: relative;
+}
+.side2-bg{
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  margin-left: -300px;
+  top: 120px;
+  -webkit-animation:side2Animation 2s infinite alternate;
+  -moz-animation:side2Animation 2s infinite alternate;
+  -o-animation:side2Animation 2s infinite alternate;
+  -ms-animation:side2Animation 2s infinite alternate;
+}
+.cloud-container{
+  width: 750px;
+  height: 100%;
+  margin: 0 auto;
+}
+.side2-cloud1{
+  width: 300px;
+  height: 300px;
+  background: url(../imgs/side2-cloud1.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-top: 80px;
+  margin-left: 10px;
+  float: left;
+  position: relative;
+  z-index: 200;
+  -webkit-animation:cloud1 1.5s infinite alternate;
+  -moz-animation:cloud1 1.5s infinite alternate;
+  -o-animation:cloud1 1.5s infinite alternate;
+  -ms-animation:cloud1 1.5s infinite alternate;
+}
+.side2-cloud2{
+  width: 300px;
+  height: 300px;
+  background: url(../imgs/side2-cloud2.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  float: right;
+  margin-top: 20px;
+  position: relative;
+  z-index: 200;
+  -webkit-animation:cloud2 1.7s infinite alternate;
+  -moz-animation:cloud2 1.7s infinite alternate;
+  -o-animation:cloud2 1.7s infinite alternate;
+  -ms-animation:cloud2 1.7s infinite alternate;
+}
+.side2-cloud3{
+  width: 300px;
+  height: 300px;
+  background: url(../imgs/side2-cloud3.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  float: right;
+  margin-right: 50px;
+  margin-top: 80px;
+  position: relative;
+  z-index: 200;
+  -webkit-animation:cloud2 1.3s infinite alternate;
+  -moz-animation:cloud2 1.3s infinite alternate;
+  -o-animation:cloud2 1.3s infinite alternate;
+  -ms-animation:cloud2 1.3s infinite alternate;
+}
+.cloud-container img{
+  float: left;
+}
+@-webkit-keyframes side2Animation{
+  0%{
+    top: 130px;
+  }
+  100%{
+    top: 110px;
+  }
+}
+@-moz-keyframes side2Animation{
+  0%{
+    top: 130px;
+  }
+  100%{
+    top: 110px;
+  }
+}
+@-o-keyframes side2Animation{
+  0%{
+    top: 130px;
+  }
+  100%{
+    top: 110px;
+  }
+}
+@-ms-keyframes side2Animation{
+  0%{
+    top: 130px;
+  }
+  100%{
+    top: 110px;
+  }
+}
+@-webkit-keyframes cloud1{
+  0%{
+    top: -10px;
+  }
+  100%{
+    top: 10px;
+  }
+}
+@-moz-keyframes cloud1{
+  0%{
+    top: -10px;
+  }
+  100%{
+    top: 10px;
+  }
+}
+@-o-keyframes cloud1{
+  0%{
+    top: -10px;
+  }
+  100%{
+    top: 10px;
+  }
+}
+@-ms-keyframes cloud1{
+  0%{
+    top: -10px;
+  }
+  100%{
+    top: 10px;
+  }
+}
+@-webkit-keyframes cloud2{
+  0%{
+    top: 10px;
+  }
+  100%{
+    top: -10px;
+  }
+}
+@-moz-keyframes cloud2{
+  0%{
+    top: 10px;
+  }
+  100%{
+    top: -10px;
+  }
+}
+@-o-keyframes cloud2{
+  0%{
+    top: 10px;
+  }
+  100%{
+    top: -10px;
+  }
+}
+@-ms-keyframes cloud2{
+  0%{
+    top: 10px;
+  }
+  100%{
+    top: -10px;
+  }
+}
+@-webkit-keyframes cloud3{
+ 0%{
+    top: -10px;
+  }
+  100%{
+    top: 10px;
+  }
+}
+@-moz-keyframes cloud3{
+ 0%{
+    top: -10px;
+  }
+  100%{
+    top: 10px;
+  }
+}
+@-o-keyframes cloud3{
+ 0%{
+    top: -10px;
+  }
+  100%{
+    top: 10px;
+  }
+}
+@-ms-keyframes cloud3{
+ 0%{
+    top: -10px;
+  }
+  100%{
+    top: 10px;
+  }
+}
+/*---------------------------------------------------响应------------------------------------------------------*/
+
+.side3 {
+  background: #ff8604;
+}
+.pagination {
+  position: absolute;
+  z-index: 20;
+  left: 10px;
+  top: 10px;
+}
+.swiper-pagination-switch {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background: #555;
+  margin: 0 0px 5px;
+  opacity: 0.8;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.swiper-active-switch {
+  background: #fff;
+}
+@media screen and (max-width: 1025px){
+  .side1 {
+  background-size: 1024px auto;
+  }
+  .stone1,.stone2,.stone3,.house{
+    bottom:51px;
+  }
+  .stone1{
+  width: 120px;
+  height: 200px;
+  background-size: 100% auto;
+  background-position: center 125px;
+  }
+  .stone2{
+    width: 150px;
+    height: 200px;
+    background-size: 100% auto;
+    background-position: center 125px;
+    right: 50%;
+  }
+  .stone3{
+    width: 220px;
+    height: 200px;
+    background-size: 100% auto;
+    background-position: center 78px;
+    right: 5%;
+  }
+  .house{
+    width: 340px;
+    height: 300px;
+    background-size: 100% auto;
+    background-position: center 77px;
+    right: 25%;
+  }
+  .house img{
+    width: 180px;
+    height: 180px;
+    position: relative;
+    right: 1px;
+    top: 35px;
+    -webkit-animation:windmill 7s infinite linear;
+    -moz-animation:windmill 7s infinite linear;
+    -o-animation:windmill 7s infinite linear;
+    -ms-animation:windmill 7s infinite linear;
+  }
+  .car{
+    background-size: 80% auto;
+    background-position: center 68px;
+  }
+  .sun{
+  width: 80px;
+  height: 80px;
+  }
+}

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>美食</title>
+
+    <!-- Bootstrap -->
+    <link th:href="@{css/bootstrap.min.css}" rel="stylesheet"/>
+    <link th:href="@{css/food.css}" rel="stylesheet"/>
+    <link th:href="@{css/swiper.min.css}" rel="stylesheet"/>
+  </head>
+  <body>
+    <div id="login">
+      <h1>Login</h1>
+      <div class="username username-login">
+        <span class="glyphicon glyphicon-user"></span>
+        <input type="text" placeholder="用户名:" maxlength="8"/>
+      </div>
+      <div class="password password-login">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <input type="password" placeholder="密码:" maxlength="12"/>
+      </div>
+      <button class="loginB"></button>
+      <a href="#javascript" class="exit-login">
+        <span class="glyphicon glyphicon-remove"></span>
+      </a>
+      <p class="prompt-login">*该字段不能为空</p>
+    </div>
+    <div id="register">
+      <h1>Register</h1>
+      <div class="username username-register">
+        <span class="glyphicon glyphicon-user"></span>
+        <input type="text" placeholder="请输入用户名:" maxlength="8"/>
+      </div>
+      <div class="password password-register">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <input type="password" placeholder="请输入密码:" maxlength="12"/>
+      </div>
+      <div class="password-again">
+        <span class="glyphicon glyphicon-tags"></span>
+        <input type="password" placeholder="请再次输入密码:" maxlength="12"/>
+      </div>
+      <button class="registerB"></button>
+      <a href="#javascript" class="exit-register">
+        <span class="glyphicon glyphicon-remove"></span>
+      </a>
+      <p class="prompt-register">*请输入该字段哦</p>
+    </div>
+    <div class="login-register">
+      <div class="login-register-btns">
+          <a href="#javascript" class="login-btn">登录</a>
+          <a href="#javascript" class="register-btn">注册</a>
+          <a href="#javascript" class="user-operation">
+            <p>LiZhiHao</p>
+            <span class="glyphicon glyphicon-chevron-down"></span>
+          </a>
+      </div>
+      <a href="#javscript" class="user-btn">
+        <span class="glyphicon glyphicon-user"></span>
+      </a>
+    </div>
+    <div class="user-news">
+      <a href="#javascript" class="personal">
+         <span class="glyphicon glyphicon-home"></span>个人中心
+      </a>
+      <a href="#javascript" class="layout">
+         <span class="glyphicon glyphicon-off"></span>注销
+      </a>
+    </div>
+    <div class="nav-btn">
+      <a href="#javascript">
+        <div class="line1"></div>
+        <div class="line1"></div>
+        <div class="line2"></div>
+      </a>
+    </div>
+   <div class="top">
+     <div class="nav clearfix">
+       <ul>
+         <li>
+           <a href="#javascript">
+             故事
+           </a>
+         </li>
+         <li>
+           <a href="#javascript">
+             美食
+           </a>
+         </li>
+         <li>
+           <a href="#javascript">
+             旅游
+           </a>
+         </li>
+         <li>
+           <a href="#javascript">
+             词条
+           </a>
+         </li>
+       </ul>
+     </div>
+     <h1>
+      美食，是令人食指大动的金黄
+     </h1>
+     <div class="search">
+       <div class="search-container">
+         <input type="text" placeholder="请输入您要搜索的内容" id="autocomplete-ajax"/>
+         <input type="text" name="country" id="autocomplete-ajax-x" disabled="disabled" style="color: #CCC; position: absolute; background: transparent; z-index: 1;"/>
+         <a href="#javscript" class="search-btn">
+            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+         </a>
+       </div>
+       <div id="selction-ajax"></div>
+     </div>
+   </div>
+   <div id="hot-food" class="clearfix">
+     <div class="hot-food-top clearfix">
+       <div class="title">
+         <p class="title-b">热门美食排行榜(来自全国各地的乡村美食)</p>
+         <p class="title-s">每周更新，人气最热十大美食</p>
+         <div class="more">
+           <a href="#javscript">查看更多</a>
+         </div>
+       </div>
+       <div class="hot-food-top-r clearfix">
+         <div class="top-circle4">
+           <span>自然</span>
+         </div>
+         <div class="top-circle3">
+           <span>优质</span>
+         </div>
+         <div class="top-circle2">
+           <span>健康</span>
+         </div>
+         <div class="top-circle1">
+           <span>美味</span>
+         </div>
+       </div>
+     </div>
+     <div class="rank">
+       <div class="rank-title">本期最热</div>
+       <ul>
+         <li>
+           <a href="#javscript">Top1:</a>
+         </li>
+         <li>
+           <a href="#javscript">Top2:</a>
+         </li>
+         <li>
+           <a href="#javscript">Top3:</a>
+         </li>
+         <li>
+           <a href="#javscript">Top4:</a>
+         </li>
+         <li>
+           <a href="#javscript">Top5:</a>
+         </li>
+         <li>
+           <a href="#javscript">Top6:</a>
+         </li>
+         <li>
+           <a href="#javscript">Top7:</a>
+         </li>
+         <li>
+           <a href="#javscript">Top8:</a>
+         </li>
+         <li>
+           <a href="#javscript">Top9:</a>
+         </li>
+         <li>
+           <a href="#javscript">Top10:</a>
+         </li>
+         
+       </ul>
+     </div>
+     <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide1"></div>
+          <div class="swiper-slide slide2"></div>
+          <div class="swiper-slide slide3"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+     </div>
+   </div>
+   <div id="all">
+      <div class="screen">
+        <ul>
+          <li>
+            <a href="#javascript" class="screen-selected">全部</a>
+          </li>
+          <li>
+            <a href="#javascript">按热度</a>
+          </li>
+          <li>
+            <a href="#javascript">按收藏</a>
+          </li>
+          <li>
+            <a href="#javascript">按时间</a>
+          </li>
+        </ul>
+      </div>
+        <div id="masonry" class="container-fluid">
+            <!-- 动态添加的内容 -->
+        </div>
+       <p id="p1"></p>
+       <ul class="pagination" id="pagination1"></ul>
+   </div>
+    <div class="bottom">
+      <h4>Copyright © 2017.Company name All rights reserved.</h4>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script th:src="@{js/util/jquery-3.1.1.min.js}"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script th:src="@{js/util/bootstrap.min.js}"></script>
+    <script th:src="@{js/util/swiper.min.js}"></script>
+    <script th:src="@{js/util/masonry-docs.min.js}"></script>
+    <script th:src="@{js/food/nav.js}"></script>
+    <script th:src="@{js/food/food.js}"></script>
+    <script th:src="@{js/food/l_add.js}"></script>
+    <!-- Zige_AutoComplete -->
+    <script type="text/javascript" th:src="@{js/util/jquery.autocomplete.js}"></script>
+    <script type="text/javascript" th:src="@{js/food/demo.js}"></script>
+    <!-- paginator -->
+    <script type="text/javascript" th:src="@{js/food/jqPaginator.js}"></script>
+    <!-- Zige return -->
+    <script type="text/javascript" th:src="@{js/food/z_food.js}"></script>
+  </body>
+</html>
