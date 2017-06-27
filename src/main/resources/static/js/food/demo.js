@@ -38,7 +38,9 @@ $(function () {
         });
     });
 
-
+    /***
+     * git Test
+     */
     // Setup jQuery ajax mock:
     /**$.mockjax({
         url: '*',
