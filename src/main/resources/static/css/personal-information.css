@@ -1,0 +1,46 @@
+body{
+    height: 2000px;
+}
+/*---------------------------------------个人信息内容---------------------------------------------*/
+#content{
+    width: 100%;
+    padding-top: 10rem;
+}
+.input-container{
+    width: 50rem;
+    margin: 0 auto;
+    position: relative;
+    right: 1rem;
+    margin-top: 2rem;
+}
+.input-container input{
+    width: 30rem;
+    height: 3rem;
+    border:none;
+    border-bottom:2px solid #198C8A;
+    outline: none;
+    background: none;
+    float: left;
+    font-size: 1.8rem;
+    text-align: center;
+}
+.input-container .sex-input{
+    width: 10rem;
+}
+.input-container p{
+    width: 10rem;
+    float: left;
+    font-size: 2.2rem;
+    margin: 0;
+    line-height: 4rem;
+    text-align: right;
+    text-indent: -2rem;
+    margin-right: 2rem;
+}
+.input-container a{
+    text-decoration: none;
+    color: #198C8A;
+    font-size: 2rem;
+    margin-left: 2rem;
+    line-height: 4rem;
+}    

@@ -1,0 +1,149 @@
+body{
+    font-size: 10px;
+    font-family: "微软雅黑";
+}
+/*-----------------------------------------------------清浮动-----------------------------------------------------*/
+
+.clearfix:before, .clearfix:after {
+    display: table;
+    content: '';
+}
+
+.clearfix:after {
+    clear: both;
+}
+/*-----------------------------------------------------顶部-----------------------------------------------------*/
+#top{
+    width:100%;
+    height: 40rem;
+    background: #198C8A;
+    position: relative;
+}
+#top .back{
+    width: 3.2rem;
+    height: 3.2rem;
+    position: absolute;
+    left: 1.5rem;
+    top: .5rem;
+    transition: .4s all ease-in-out;
+} 
+#top .back a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 4rem;
+}
+#top .back:hover{
+    left: .5rem;
+}
+#top .back a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.user-img-name{
+    width:45rem;
+    position: absolute;
+    left: 5rem;
+    top: 12rem;
+}
+.circle-border{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    border:2px solid #fff;
+    padding: .36rem 0 0 .39rem;
+    float: left;
+} 
+.head-img{
+    width: 14rem;
+    height: 14rem;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-image: url(../imgs/head-img.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+.head-img a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+#top .user-name{
+    width: 28rem;
+    float: left;
+    color: #fff;
+    font-size: 3rem;
+    text-indent: 3rem;
+}
+#top  .fans{
+    width: 28rem;
+    float: left;
+    text-indent: 3rem;
+    font-size: 2rem;
+    color: #fff;
+    position: relative;
+    top: 2.2rem;
+}
+#top .works{
+    width: 28rem;
+    float: left;
+    text-indent: 3rem;
+    font-size: 2rem;
+    color: #fff;
+    position: relative;
+    top: 4.2rem;
+}
+#top .upload{
+    width: 10rem;
+    height: 4rem;
+    background: #ff8e68;
+    border-radius: 1.5rem;
+    position: absolute;
+    right: 3rem;
+    bottom:4rem;
+    transition: .4s all ease-in-out;
+}
+#top .upload a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+    line-height: 4rem;
+    color: #fff;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+#top .upload:hover{
+    width: 12rem;
+}
+/*-----------------------------------------------------导航-----------------------------------------------------*/
+#nav{
+    width: 100%;
+    height: 10rem;
+    box-shadow: .2rem 0 1rem #999;
+    text-align: center;
+}
+#nav ul{
+    margin: 0;
+    padding-left: 0;
+}
+#nav ul li{
+    list-style: none;
+    display: inline-block;
+    font-size: 2rem;
+    margin: 0 1rem;
+}
+#nav ul li a{
+    padding: 0 2rem;
+    height: 9.9rem;
+    display: block;
+    line-height: 10rem;
+    text-decoration: none;
+    color: #000;
+}
+#nav ul li a:hover{
+    border-bottom:2px solid #198C8A; 
+}
+.nav-focus{
+    border-bottom:2px solid #198C8A; 
+}

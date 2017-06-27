@@ -14,30 +14,43 @@ body{
 }
 /*-----------------------------------------------------登录注册-----------------------------------------------------*/
 .login-register{
-    width: 20rem;
-    height: 5rem;
+    width: 200px;
+    height: 50px;
     position:fixed;
-    right: 2rem;
-    top: 2.5rem;
+    right: 20px;
+    top: 25px;
     z-index: 500;
 }
 .user-btn{
-    width: 5rem;
-    height: 5rem;
+    width: 50px;
+    height: 50px;
     text-decoration: none;
     border-radius: 50%;
     background: #ffc000;
-    line-height: 5rem;
+    line-height: 50px;
     text-align: center;
     display: block;
-    font-size: 2rem;
+    font-size: 20px;
     color: #fff;
     float: right;
     position: relative;
-    left: 2.5rem;
+    left: 25px;
     border:2px solid #fff;
     background-repeat: no-repeat;
     background-size: 100% auto;
+}
+.forget{
+    width: 150px;
+    height: 40px;
+    display: block;
+    color: #999;
+    font-size: 16px;
+    position: absolute;
+    right: -6px;
+    bottom: 0;
+}
+.forget:hover,.forget:active,.forget:link,.forget:visited{
+    color: #999;
 }
 .user-btn:hover,.user-btn:active,.user-btn:link,.user-btn:visited{
     color: #fff;
@@ -45,53 +58,56 @@ body{
 .login-register-btns{
     background: #fff;
     width: 0;
-    height: 5rem;
-    border:.2rem solid #eee;
+    height: 50px;
+    border:2px solid #eee;
     float: right;
-    border-radius: 0 5rem 5rem 0;
+    border-radius: 0 50px 50px 0;
     overflow: hidden;
-    padding-left: 2rem;
-    line-height: 5rem;
+    padding-left: 20px;
+    line-height: 50px;
 }
 .login-register-btns a{
+    width: 30px;
+    display: block;
+    float: left;
     text-decoration: none;
     color: #c6c6c6;
-    margin-left: 2rem;
-    font-size: 1.3rem;
+    margin-left: 20px;
+    font-size: 13px;
 }
 .login-register-btns a:hover{
     color: #ffc000;
 }
 .user-operation{
-    width: 100%;
+    width: 100%!important;
     height: 100%;
     display: block;
     margin: 0;
     position: relative;
-    right: 1.8rem;
+    right: 18px;
     display: none;
 }
 .user-operation p{
     width: 75%;
     color: #ffc000;
-    font-size: 1.6rem;
-    text-indent:1rem;
+    font-size: 16px;
+    text-indent:10px;
     float: left;
 }
 .user-operation span{
     float: right;
-    margin: 1.8rem 1.5rem 0 0;
+    margin: 18px 15px 0 0;
     color: #ffc000;
 }
 .user-news{
-    width: 17.1rem;
-    height: 15rem;;
+    width: 171px;
+    height: 150px;
     background: #fff;
     position: fixed;
     z-index: 9999;
-    right: 2rem;
-    top: 8rem;
-    border-radius: .5rem;
+    right: 20px;
+    top: 80px;
+    border-radius: 5px;
     display: none;
     overflow: hidden;
 }
@@ -101,9 +117,9 @@ body{
     display: block;
     text-decoration: none;
     color: #ffc000;
-    line-height: 7.5rem;
-    font-size: 1.6rem;
-    padding-left: 4rem;
+    line-height: 75px;
+    font-size: 16px;
+    padding-left: 40px;
 }
 .user-news a:hover{
     background: #ffc000;
@@ -113,43 +129,44 @@ body{
 .personal{
     border:2px solid #eee;
     border-bottom:none;
-    border-radius: .5rem .5rem 0 0;
+    border-radius: 5px 5px 0 0;
 }
 .layout{
     border:2px solid #eee;
     border-top: none;
-    border-radius: 0 0 .5rem .5rem;
+    border-radius: 0 0 5px 5px;
 }
 .user-news a span{
-    margin-right: 1rem;
+    margin-right: 10px;
     position: relative;
-    top: .2rem;
+    top: 2px;
 }
 #login,#register{
-    width: 50rem;
-    height: 22rem;
+    width: 500px;
+    height: 220px;
     box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
     position: fixed;
     background: #fff;
     left: 50%;
-    margin-left: -25rem;
-    top: 16rem;
+    margin-left: -250px;
+    top: 100px;
     display: none;
     opacity: 0;
     filter: alpha(opacity=0);
     border-radius: 5px;
     z-index: 9999;
-    padding: 19px 55px;;
+    padding: 19px 55px;
 }
 #register{
-    height: 25.5rem;
+    height: 345px;
+    top: 80px;
 }
 #login h1,#register h1{
     color: #7E7E7E;
     text-align: center;
     letter-spacing: -0.05em;
-    line-height: 2rem;
-    margin-bottom: 2.5rem;
+    line-height: 20px;
+    margin-bottom: 25px;
 }
 #login h1:before,
 #login h1:after,
@@ -181,67 +198,87 @@ body{
 	background:linear-gradient(right,rgba(126,126,126,1) 0%,rgba(255,255,255,1) 100%);
 	left:0px;
 }
-.username,.password,.password-again{
+.username,.password,.password-again,.email,.verification{
     width: 100%;
-    height: 3.5rem;
-    margin-top: 1.5rem;
-    font-size: 1.8rem;
+    height: 35;
+    margin-top: 15px;
+    font-size: 18px;
 }
-.username span,.password span,.password-again span{
+.username span,.password span,.password-again span,.email span,.verification span{
     height: 100%;
-    width: 2.5rem;
+    width: 25px;
     display: block;
     float: left;
-    line-height: 3.5rem;
-    margin-right: 2.5rem;
+    line-height: 35px;
+    margin-right: 25px;
 }
-.username input,.password input,.password-again input{
-    width: calc(100% - 7.5rem);
+.username input,.password input,.password-again input,.email input,.verification input{
+    width: calc(100% - 75px);
     float:left;
     border:none;
     border-bottom:3px solid #999;
     outline: none;
     background: none;
-    font-size:1.6rem;
+    font-size:16px;
     color: #999;
     position: relative;
     z-index: 10;
 }
+.verification input{
+    width: calc(100% - 165px);
+}
+.verification-btn{
+    width: 80px;
+    height: 30px;
+    background-color: #f44336;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    font-size:14px;
+    outline: none;
+    border:none;
+    float: right;
+    position: relative;
+    right: 22px;
+    bottom:2px;
+}
 .loginB,.registerB{
-    width: 6rem;
-    height:6rem;
+    width: 60px;
+    height:60px;
     border-radius: 50%;
     background: #FFE434;
-    background-image: url(../imgs/right-arrow.png);
+    background-image: url(http://olf10efjb.bkt.clouddn.com/right-arrow.png);
     background-size: 50% auto;
     background-position: center;
     background-repeat: no-repeat;
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.27);
     position: absolute;
-    top: 8.2rem;
-    right: -2.5rem;
+    top: 82px;
+    right: -25px;
     border:none;
     outline: none;
     transition: .3s all ease-in-out;
 }
 .registerB{
-    top: 10rem;
+    top: 14.5rem;
     background-color: #f44336;
 }
 .loginB:hover,.registerB:hover{
-    right: -2rem;
+    right: -20px;
 }
-#login a,#register a{
-    text-decoration: none;
+.exit-login,.exit-register{
     color: #999;
     position: absolute;
-    font-size:1.8rem;
-    right: 2rem;
-    top: 1rem;
+    font-size:18px;
+    right: 20px;
+    top: 10px;
     transition: .3s all ease-in-out;
 }
-#login a:hover,#register a:hover{
+.exit-login:hover,.exit-register:hover{
     transform:scale(1.2,1.2);
+}
+.exit-login:hover,.exit-register:hover,.exit-login:link,.exit-register:link,.exit-login:visited,.exit-register:visited,.exit-login:active,.exit-register:active{
+    color: #999;
 }
 .prompt-login{
     display: none;
@@ -249,24 +286,24 @@ body{
     color: #f44336;
     position: absolute;
     z-index: 1;
-    font-size: 1.4rem;
-    right: 6.5rem;/*7.9rem 对齐*/
-    bottom:5.3rem;/*10.4rem 与用户名对齐*/
+    font-size: 14px;
+    right: 65px;/*7.9rem 对齐*/
+    bottom:53px;/*10.4rem 与用户名对齐*/
 }
 .prompt-register{
     display: none;
     opacity: 0;
     color: #f44336;
-    font-size: 1.4rem;
+    font-size: 14px;
     position: absolute;
     z-index: 1;
-    right: 6.5rem;/*7.9rem 对齐*/
-    bottom:13.9rem;/*3.8与again对齐，9rem与密码对齐*/
+    right: 65px;/*7.9rem 对齐,*/
+    bottom:28px;/*12.8与again对齐，17.8rem与密码对齐*，22.9与用户名对齐,7.8与邮箱对齐*/
 }
 /*-----------------------------------------------------顶部-----------------------------------------------------*/
 .top{
     width: 100%;
-    height: 50rem;
+    height: 500px;
     background: #ffc000;
 }
 .top h1{
@@ -274,18 +311,18 @@ body{
     font-weight: 700;
     color:#fff;
     text-align: center;
-    margin-top: 12rem;
+    margin-top: 120px;
 }
 /*-----------------------------------------------------导航-----------------------------------------------------*/
 .nav{
-    width: 80rem;
+    width: 800px;
     margin: 0 auto;
-    height: 10rem;
-    padding-left: 25rem;
-    background-image: url(../imgs/logo.png);
+    height: 100px;
+    padding-left: 250px;
+    background-image: url(http://olf10efjb.bkt.clouddn.com/logo.png);
     background-repeat: no-repeat;
-    background-size: 20rem auto;
-    background-position: 9.5rem -4rem;
+    background-size: 200px auto;
+    background-position: 95px -40px;
 }
 .nav ul {
     margin: 0;
@@ -294,15 +331,15 @@ body{
 .nav ul li{
     list-style: none;
     float: left;
-    width: 10rem;
+    width: 100px;
     height: 100%;
-    line-height: 8rem;
+    line-height: 80px;
 }
 .nav ul li a{
     display: block;
     width:100%;
     height: 100%;
-    font-size: 2rem;
+    font-size: 20px;
     color: #fff;
     text-decoration: none;
     text-align: center;
@@ -313,15 +350,15 @@ body{
     background: #eaa90d;
 }
 .nav-btn{
-    width: 4rem;
-    height: 4rem;
+    width: 40px;
+    height: 40px;
     background: #fff;
-    border-radius: .5rem;
+    border-radius: 5px;
     position: fixed;
-    left: 2rem;
-    top: 3rem;
-    padding-top: .6rem;
-    padding-left: .4rem;
+    left: 20px;
+    top: 30px;
+    padding-top: 6px;
+    padding-left: 4px;
     border:1px solid #ffc000;
     z-index: 999;
     display: none;
@@ -330,18 +367,18 @@ body{
     width: 100%;
     height: 100%;
     display: block;
-    border-radius: .5rem;
+    border-radius: 5px;
 }
 .line1{
     width: 90%;
-    height: .6rem;
+    height: 6px;
     background: #ffc000;
     float: left;
-    margin-bottom: .5rem;
+    margin-bottom: 5px;
 }
 .line2{
     width: 90%;
-    height: .65rem;
+    height: 6.5px;
     background: #ffc000;
     float: left;
 
@@ -350,44 +387,44 @@ body{
 .search{
     width: 100%;
     text-align:center;
-    margin-top: 5.5rem;
+    margin-top: 55px;
 }
 .search-container{
-    width: 54rem;
+    width: 540px;
     margin: 0 auto;
 }
 .search input{
-    width: 50rem;
-    height: 4rem;
+    width: 500px;
+    height: 40px;
     border:none;
     outline: none;
-    text-indent: 3.2rem;
-    font-size: 1.6rem;
+    text-indent: 32px;
+    font-size: 16px;
     float: left;
-    border-radius:1rem 0 0 1rem;
+    border-radius:10px 0 0 10px;
 }
 .search-container a{
-    height: 4rem;
-    border:.2rem solid #fff;
-    margin-left: 40rem;
+    height: 40px;
+    border:2px solid #fff;
+    margin-left: 400px;
     display: block;
-    font-size: 2rem;
+    font-size: 20px;
     text-align: center;
-    line-height: 4rem;
+    line-height: 40px;
     text-decoration: none;
     color: #fff;
-    border-radius:0 1rem 1rem 0;
+    border-radius:0 10px 10px 0;
 }
 /*-----------------------------------------------------热门食物-----------------------------------------------------*/
 #hot-food{
     width: 100%;
     padding: 0 10%;
     font-family: "微软雅黑";
-    padding-bottom:5rem;
+    padding-bottom:50px;
 }
 .hot-food-top{
     width:100%;
-    padding-top:7rem;
+    padding-top:70px;
 }
 .hot-food-top .title{
     width: 50%;
@@ -395,12 +432,12 @@ body{
 }
 .hot-food-top .title .title-b{
     width: 100%;
-    font-size: 3rem;
+    font-size: 30px;
     font-weight: 700;
 }
 .hot-food-top .title .title-s{
     width: 100%;
-    font-size: 1.4rem;
+    font-size: 14px;
     font-weight: 700;
     color: #999;
 }
@@ -409,9 +446,9 @@ body{
     float: right;
 }
 .top-circle1,.top-circle2,.top-circle3,.top-circle4{
-    font-size: 2.5rem;
+    font-size: 25px;
     text-align: center;
-    line-height: 14rem;
+    line-height: 140px;
     color: #fff;
     font-weight: 700;
 }
@@ -420,71 +457,71 @@ body{
     z-index: 100;
 }
 .top-circle1{
-    width: 14rem;
-    height: 14rem;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     background: #3CC4C9;
     float: right;
     position: relative;
-    left: 9rem;
+    left: 90px;
     z-index: 1;
 }
 .top-circle1:after{
     content:'';
     display: block;
-    width: 7rem;
-    height: 7rem;
-    border-radius: 1rem;
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
     background: #3CC4C9;
     position: relative;
-    left: 7rem;
-    bottom:7rem;
+    left: 70px;
+    bottom:70px;
 }
 .top-circle2{
-    width: 14rem;
-    height: 14rem;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     background: #ffc000;
     float: right;
     position: relative;
-    left: 6rem;
+    left: 60px;
     z-index: 2;
 }
 .top-circle2:after{
     content:'';
     display: block;
-    width: 7rem;
-    height: 7rem;
-    border-radius: 1rem;
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
     background: #ffc000;
     position: relative;
-    left: 7rem;
-    bottom:7rem;
+    left: 70px;
+    bottom:70px;
 }
 .top-circle3{
-    width: 14rem;
-    height: 14rem;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     background: #F06D68;
     float: right;
     position: relative;
-    left: 3rem;
+    left: 30px;
     z-index: 3;
 }
 .top-circle3:after{
     content:'';
     display: block;
-    width: 7rem;
-    height: 7rem;
-    border-radius: 1rem;
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
     background: #F06D68;
     position: relative;
-    left: 7rem;
-    bottom:7rem;
+    left: 70px;
+    bottom:70px;
 }
 .top-circle4{
-    width: 14rem;
-    height: 14rem;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     background: #366972;
     float: right;
@@ -494,32 +531,32 @@ body{
 .top-circle4:after{
     content:'';
     display: block;
-    width: 7rem;
-    height: 7rem;
-    border-radius: 1rem;
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
     background: #366972;
     position: relative;
-    left: 7rem;
-    bottom:7rem;
+    left: 70px;
+    bottom:70px;
 }
 .more{
-    width: 20rem;
-    height: 4rem;
+    width: 200px;
+    height: 40px;
     background: #ffc000;
-    border-radius: 2rem;
+    border-radius: 20px;
     float: right;
-    margin:1.6rem 4rem 0 0;
+    margin:16px 40x 0 0;
 }
 .more a{
     width: 100%;
     height: 100%;
     display: block;
     text-align: center;
-    line-height: 3.7rem;
-    font-size: 1.8rem;
+    line-height: 37px;
+    font-size: 18px;
     font-weight: 700;
     color:#fff;
-    border-radius: 2rem;
+    border-radius: 20px;
     border:2px solid transparent;
     text-decoration: none;
 }
@@ -529,20 +566,20 @@ body{
     border:2px solid #ffc000;
 }
 .rank{
-    width: 40rem;
-    height: 42rem;
+    width: 400px;
+    height: 420px;
     background: #366972;
-    margin-top: 6rem;
-    padding-top: 2rem;
+    margin-top: 60px;
+    padding-top: 20px;
     float: left;
 }
 .rank-title{
     width: 100%;
-    font-size: 2.5rem;
+    font-size: 25px;
     color: #fff;
     font-weight: 700;
-    padding-left: 2rem;
-    margin-bottom:1rem;
+    padding-left: 20px;
+    margin-bottom:10px;
 }
 .rank ul{
     margin:0;
@@ -550,10 +587,10 @@ body{
 }
 .rank ul li{
     width: 100%;
-    height: 3.5rem;
+    height: 35px;
     list-style: none;
-    font-size: 1.8rem;
-    line-height: 3.5rem;
+    font-size: 18px;
+    line-height: 35px;
 }
 .rank ul li a{
     width: 100%;
@@ -561,15 +598,15 @@ body{
     display: block;
     color: #fff;
     text-decoration: none;
-    padding-left: 2rem;
+    padding-left: 20px;
 }
 .rank ul li a:hover{
     background: #145E69;
 }
 .swiper-container{
-    width: 60rem;
-    height:42rem;
-    margin-top: 6rem!important;
+    width: 600px;
+    height:420px;
+    margin-top: 60px!important;
     float: right;
 }
 .slide1{
@@ -593,10 +630,10 @@ body{
 }
 .screen{
     width:100%;
-    height:5rem;
+    height:50px;
     background:#ffc000;
-    padding: 1rem 0 0 1rem;
-    margin-bottom:3rem;
+    padding: 10px 0 0 10px;
+    margin-bottom:30px;
 }
 .screen ul{
     margin: 0;
@@ -605,21 +642,21 @@ body{
 .screen ul li{
     list-style: none;
     float: left;
-    width:7rem;
-    height: 3rem;
-    margin-left: 2rem;
-    border-radius: .5rem;
-    line-height: 3rem;
+    width:70px;
+    height: 30px;
+    margin-left: 20px;
+    border-radius: 5px;
+    line-height: 30px;
 }
 .screen ul li a{
     width: 100%;
     height: 100%;
     display: block;
     text-align: center;
-    border-radius: .5rem;
+    border-radius: 5px;
     text-decoration: none;
     color: #000;
-    font-size: 1.6rem;
+    font-size: 16px;
     color: #fff;
 }
 .screen-selected{
@@ -632,9 +669,9 @@ body{
     padding: 0;
 }
 .box {
-    width: 25rem;
-    padding: 1rem; 
-    margin:  0 0 1rem;
+    width: 250px;
+    padding: 10px; 
+    margin:  0 0 10px;
     border:1px solid #c6c6c6;
 }
 .box img {
@@ -647,34 +684,34 @@ body{
 .food-name{
     width: 100%;
     float: left;
-    font-size: 1.3rem;
+    font-size: 13px;
     color: #898686;
-    margin-top: .5rem;
+    margin-top: 5px;
     border-bottom:1px solid #c6c6c6;
-    line-height: 2.5rem;
+    line-height: 25px;
 }
 .food-views{
     width: 30%;
     float: left;
-    font-size: 1.1rem;
+    font-size: 11px;
     color: #999;
     margin: 0;
 }
 .food-views font{
     color: #ffc000;
-    font-size: 1.3rem;
+    font-size: 13px;
     font-weight: 700;
-    margin-right: .2rem;
+    margin-right: 2px;
 }
 .time-author{
     float: right;
     color: #999;
-    font-size: 1.1rem;
+    font-size: 11px;
 }
 /*------------------------------------------------- 底部--------------------------------------------*/
 .bottom{
     width: 100%;
-    padding: 3rem 0;
+    padding: 30px 0;
     text-align: center;
     background: #ffc000;
     color: #fff;
@@ -687,62 +724,62 @@ body{
     }
     .hot-food-top .title .title-b{
         width: 100%;
-        font-size: 2.5rem;
+        font-size: 25px;
     }
     .hot-food-top .title .title-s{
-        font-size: 1.2rem;
+        font-size: 12px;
     }
     .top-circle1,.top-circle2,.top-circle3,.top-circle4{
-        width: 10rem;
-        height:10rem;
-        font-size: 2rem;
-        line-height: 10rem;
+        width: 100px;
+        height:100px;
+        font-size: 20px;
+        line-height: 100px;
     }
     .top-circle1:after, .top-circle2:after, .top-circle3:after, .top-circle4:after{
-        width: 5.2rem;
-        height: 5.1rem;
-        left: 4.8rem;
-        bottom:5rem;
+        width: 52px;
+        height: 51px;
+        left: 48px;
+        bottom:50px;
     }
     .top-circle1{
-        left: 6rem;
+        left: 60px;
     }
     .top-circle2{
-        left: 4rem;
+        left: 40px;
     }
     .top-circle3{
-        left: 2rem;
+        left: 20px;
     }
     .more{
-        width: 15rem;
-        height: 3rem;
-        margin:  0 5rem 0 0;
+        width: 150px;
+        height: 30px;
+        margin:  0 50px 0 0;
     }
     .more a{
-        line-height: 3rem;
-        font-size: 1.6rem;
+        line-height: 30px;
+        font-size: 16px;
 
     }
     .rank{
-        width: 35rem;;
+        width: 350px;
     }
     .swiper-container{
-        width: 55rem;
+        width: 550px;
     }
 }
 @media screen and (max-width: 1200px){
     .rank{
-        width: 30rem;
+        width: 300px;
     }
     .swiper-container{
-        width: 50rem;
+        width: 500px;
     }
 }
 @media screen and (max-width: 900px){
     .hot-food-top .title{
         width: 100%;
         text-align: center;
-        padding-bottom:5rem;
+        padding-bottom:50px;
     }
     .more{
         margin: 0 auto;
@@ -758,7 +795,7 @@ body{
     }
     .rank{
         width: 80%;
-        margin: 5rem auto;
+        margin: 50px auto;
         float: none;
     }
     .swiper-container{
@@ -770,39 +807,39 @@ body{
         display: block;
     }
     .nav{
-        width: 4rem;
+        width: 40px;
         height: 0;
         padding: 0;
         margin: 0;
         position: fixed;
-        left: 2rem;
-        top: 7.1rem;
+        left: 20px;
+        top: 71px;
         background-image: none;
         overflow: hidden;
         z-index: 999;
     }
     .nav ul li{
-        width: 4rem;
-        height: 4rem;
+        width: 40px;
+        height: 40px;
         background: #fff;
-        margin-top: .2rem;
+        margin-top: 2px;
         border:1px solid #ffc000;;
     }
     .nav ul li a{
-        line-height: 4rem;
+        line-height: 40px;
         color: #ffc000;
-        font-size: 1.6rem;
+        font-size: 16px;
     }
     .nav ul li a:hover{
         background: none;
         color: none;
     }
     .top{
-        padding-top: 30rem;
+        padding-top: 300px;
         background-image: url(../imgs/logo.png);
         background-repeat: no-repeat;
-        background-size: 24rem auto;
-        background-position: 50% 10rem;;
+        background-size: 240px auto;
+        background-position: 50% 100px;
     }
     .top h1{
         margin: 0;
@@ -810,34 +847,34 @@ body{
 }
 @media screen and (max-width: 600px){
     .hot-food-top .title .title-b{
-        font-size: 2rem;
+        font-size: 20px;
     }
     .hot-food-top .title .title-s{
-        font-size: 1rem;
+        font-size: 10px;
     }
     .top-circle1,.top-circle2,.top-circle3,.top-circle4{
-        width: 8rem;
-        height: 8rem;
+        width: 80px;
+        height: 80px;
         left: 0;
-        line-height: 8rem;
+        line-height: 80px;
     }
     .top-circle1:after,.top-circle2:after,.top-circle3:after,.top-circle4:after{
         display: none;
     }
     .top h1{
-        font-size: 2.5rem;
+        font-size: 25px;
     }
     .search-container{
         width: 80%;
         margin: 0 auto;
     }
     .search-container input{
-        width: calc(100% - 4rem);
+        width: calc(100% - 40px);
         float: left;
-        font-size: 1.4rem;
+        font-size: 14px;
     }
     .search-btn{
-        width: 4rem;
+        width: 40px;
         float: right;
         margin: 0!important;
     }
@@ -846,14 +883,22 @@ body{
         width: 80%;
         left: 10%;
     }
+    .screen ul li{
+        width: 40px;
+        height: 30px;
+    }
+    .screen ul li a{
+        font-size: 12px;
+    }
+    
 }
 @media screen and (max-width: 450px){
     #login,#register{
-        padding-left: 1rem;
-        padding-right: 2rem;
+        padding-left: 10px;
+        padding-right: 20px;
     }
     #login span,#register span{
         position:relative;
-        left: 1.6rem;
+        left: 16px;
     }
 }
