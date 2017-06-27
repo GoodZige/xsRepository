@@ -14,41 +14,51 @@
     <link th:href="@{css/swiper.min.css}" rel="stylesheet"/>
   </head>
   <body>
-    <div id="login">
-      <h1>Login</h1>
-      <div class="username username-login">
+  <div id="login">
+    <h1>登录</h1>
+    <div class="username username-login clearfix">
+      <span class="glyphicon glyphicon-user"></span>
+      <input type="text" placeholder="用户名:" maxlength="8"/>
+    </div>
+    <div class="password password-login clearfix">
+      <span class="glyphicon glyphicon-pencil"></span>
+      <input type="password" placeholder="密码:" maxlength="12"/>
+    </div>
+    <button class="loginB"></button>
+    <a href="#javascript" class="exit-login">
+      <span class="glyphicon glyphicon-remove"></span>
+    </a>
+    <p class="prompt-login">*该字段不能为空</p>
+    <a href="#javascript" class="forget">找回密码</a>
+  </div>
+    <div id="register">
+      <h1>注册</h1>
+      <div class="username username-register clearfix">
         <span class="glyphicon glyphicon-user"></span>
         <input type="text" placeholder="用户名:" maxlength="8"/>
       </div>
-      <div class="password password-login">
+      <div class="password password-register clearfix">
         <span class="glyphicon glyphicon-pencil"></span>
         <input type="password" placeholder="密码:" maxlength="12"/>
       </div>
-      <button class="loginB"></button>
-      <a href="#javascript" class="exit-login">
-        <span class="glyphicon glyphicon-remove"></span>
-      </a>
-      <p class="prompt-login">*该字段不能为空</p>
-    </div>
-    <div id="register">
-      <h1>Register</h1>
-      <div class="username username-register">
-        <span class="glyphicon glyphicon-user"></span>
-        <input type="text" placeholder="请输入用户名:" maxlength="8"/>
-      </div>
-      <div class="password password-register">
-        <span class="glyphicon glyphicon-pencil"></span>
-        <input type="password" placeholder="请输入密码:" maxlength="12"/>
-      </div>
-      <div class="password-again">
+      <div class="password-again clearfix">
         <span class="glyphicon glyphicon-tags"></span>
-        <input type="password" placeholder="请再次输入密码:" maxlength="12"/>
+        <input type="password" placeholder="确认密码:" maxlength="12"/>
+      </div>
+      <div class="email clearfix">
+        <span class="glyphicon glyphicon-envelope"></span>
+        <input type="text" placeholder="邮箱:"/>
+      </div>
+      <div class="verification clearfix">
+        <span class="glyphicon glyphicon-eye-open"></span>
+        <input type="text" placeholder="验证码:" maxlength="6"/>
+        <button class="verification-btn">发送</button>
       </div>
       <button class="registerB"></button>
       <a href="#javascript" class="exit-register">
         <span class="glyphicon glyphicon-remove"></span>
       </a>
-      <p class="prompt-register">*请输入该字段哦</p>
+      <p class="prompt-register">*该字段不能为空</p>
     </div>
     <div class="login-register">
       <div class="login-register-btns">

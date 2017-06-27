@@ -90,8 +90,8 @@ body{
 .user-operation p{
     width: 75%;
     color: #ffc000;
-    font-size: 16px;
-    text-indent:10px;
+    font-size: 12px;
+    text-indent: 5px;
     float: left;
 }
 .user-operation span{
@@ -200,7 +200,7 @@ body{
 }
 .username,.password,.password-again,.email,.verification{
     width: 100%;
-    height: 35;
+    height: 35px;
     margin-top: 15px;
     font-size: 18px;
 }
@@ -545,7 +545,7 @@ body{
     background: #ffc000;
     border-radius: 20px;
     float: right;
-    margin:16px 40x 0 0;
+    margin:16px 40px 0 0;
 }
 .more a{
     width: 100%;
@@ -832,7 +832,7 @@ body{
     }
     .nav ul li a:hover{
         background: none;
-        color: none;
+        color: #ffc000;
     }
     .top{
         padding-top: 300px;
