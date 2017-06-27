@@ -19,7 +19,6 @@ $(document).ready(function () {
                 currentPage: 1,
                 onPageChange: function (num, type) {//分页按钮事件
                     $('#p1').text(type + '：' + num);
-
                     $.ajax({
                         type : "post",
                         url : "/getItems",
@@ -29,7 +28,7 @@ $(document).ready(function () {
                             pageData=data;
                             //瀑布流
                             //$container.masonry('appended',$container,true);
-                            $container.masonry('reload');
+                            //$container.masonry('reload');
 
                             $('#masonry').masonry('destroy').empty();
                             for(var i=0;i<pageData["itemList"].length;i++){
@@ -54,6 +53,10 @@ $(document).ready(function () {
                                     gutter: 20,
                                     isAnimated: true,
                                 });
+                            }).done(function () {
+                                if (type!="init") {
+                                    toShow();
+                                }
                             });
                             masonryWidth();
                         }
@@ -62,4 +65,9 @@ $(document).ready(function () {
             });
         }
     });
+    function toShow() {
+        var sT=$(".screen").offset().top;
+        $("body").scrollTop(sT);
+        $(document.documentElement).scrollTop(sT);
+    }
 })
