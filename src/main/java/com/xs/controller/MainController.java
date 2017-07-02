@@ -41,4 +41,12 @@ public class MainController {
                                         @RequestParam(value = "sort") String sort){
         return itemService.findThisPage(nowPage,type,sort);
     }
+    @RequestMapping("backstage1")
+    public String toBackstage1(){
+        return "/backstage1";
+    }
+    @RequestMapping("backstage2")
+    public String toBackstage2(){
+        return "/backstage2";
+    }
 }

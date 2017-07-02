@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>
+            DX-Backstage
+        </title>
+        <!-- Bootstrap -->
+        <link th:href="@{css/bootstrap.min.css}" rel="stylesheet"/>
+        <link th:href="@{css/backstage/backstage2.css}" rel="stylesheet"/>
+        <link th:href="@{css/backstage/backstage-frame.css}" rel="stylesheet"/>
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js">
+            </script>
+            <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js">
+            </script>
+        <![endif]-->
+    </head>
+    <body>
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content clearfix">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+     <h3>详情</h3>
+     <div class="name" id="z_name">
+        姓名:
+     </div>
+     <div class="e-mail" id="z_email">
+        邮箱:
+     </div>
+     <div class="phone" id="z_phone">
+        电话:
+     </div>
+     <div class="message" id="z_text">
+        内容:
+     </div>
+    </div>
+  </div>
+</div>
+        <div class="Nav" id="Nav">
+            <div class="Nav-top">
+                <div class="btn-bg" id="btn-bg">
+                </div>
+                <div class="Nav-btn">
+                    <a href="#javascrpit" id="Nav-btn">
+                        <span class="glyphicon glyphicon-align-justify" aria-hidden="true">
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <ul id="Nav-ul">
+                <li>
+                    <a th:href="@{backstage1.html}">
+                        <span class="glyphicon glyphicon-dashboard" aria-hidden="true">
+                        </span>
+                        <div class="Nav-words1">
+                            前端信息
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a th:href="@{backstage2.html}">
+                        <span class="glyphicon glyphicon-envelope" aria-hidden="true">
+                        </span>
+                        <div class="Nav-words1">
+                            消息中心
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a th:href="@{backstage3.html}">
+                        <span class="glyphicon glyphicon-pencil" aria-hidden="true">
+                        </span>
+                        <div class="Nav-words1">
+                            作品管理
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a th:href="@{backstage4.html}">
+                        <span class="glyphicon glyphicon-tasks" aria-hidden="true">
+                        </span>
+                        <div class="Nav-words1">
+                            照片管理
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a th:href="@{backstage5.html}">
+                        <span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+                        <div class="Nav-words1">
+                            签到管理
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="Nav" id="Nav2">
+            <div class="Nav-top">
+                <div class="btn-bg" id="btn-bg2">
+                </div>
+                <div class="Nav-btn">
+                    <a href="#javascrpit" id="Nav-btn2">
+                        <span class="glyphicon glyphicon-align-justify" aria-hidden="true">
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <ul id="Nav-ul2">
+                <li>
+                    <a th:href="@{backstage1.html}">
+                        <span class="glyphicon glyphicon-dashboard" aria-hidden="true">
+                        </span>
+                        <div class="Nav-words2">
+                            前端信息
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a th:href="@{backstage2.html}">
+                        <span class="glyphicon glyphicon-envelope" aria-hidden="true">
+                        </span>
+                        <div class="Nav-words2">
+                            消息中心
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a th:href="@{backstage3.html}">
+                        <span class="glyphicon glyphicon-pencil" aria-hidden="true">
+                        </span>
+                        <div class="Nav-words2">
+                            作品管理
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a th:href="@{backstage4.html}">
+                        <span class="glyphicon glyphicon-tasks" aria-hidden="true">
+                        </span>
+                        <div class="Nav-words2">
+                            照片管理
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a th:href="@{backstage5.html}">
+                        <span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+                        <div class="Nav-words1">
+                            签到管理
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="black-bg">
+        </div>
+        <div class="box clearfix">
+            <div id="Nav-div">
+            </div>
+            <div class="content clearfix" id="content">
+                <div class="top clearfix">
+                    <div class="top-words">
+                        DXSTUDIO
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="Search"/>
+                        <div class="search-btn">
+                            <a href="#javascript">
+                                <span class="glyphicon glyphicon-search" aria-hidden="true">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="news">
+                        <div class="icon1">
+                            <div class="news-circle1">
+                                <span id="messageNum"></span>
+                            </div>
+                            <a th:href="@{backstage2.html}" class="envelope">
+                                <span class="glyphicon glyphicon-envelope" aria-hidden="true">
+                                </span>
+                            </a>
+                        </div>
+                        <div class="icon2">
+                            <div class="news-circle2">
+                                3
+                            </div>
+                            <a href="#javascript">
+                                <span class="glyphicon glyphicon-bell" aria-hidden="true">
+                                </span>
+                            </a>
+                        </div>
+                        <div class="icon3">
+                            <div class="news-circle3">
+                                7
+                            </div>
+                            <a href="#javascript">
+                                <span class="glyphicon glyphicon-tasks" aria-hidden="true">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="user">
+                        <a href="#javascript">
+                            <div class="user-img">
+                            </div>
+                            <span class="arrow glyphicon glyphicon-chevron-down">
+                            </span>
+                            <span class="user-name">
+                            </span>
+                            <br/>
+                            <span class="shenfeng">
+                                Administrator
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="user-personal">
+                    <div>
+                        <a href="#javascript">
+                            设置
+                            <span class="glyphicon glyphicon-cog">
+                            </span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#javascript">
+                            个人中心
+                            <span class="glyphicon glyphicon-user">
+                            </span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#javascript">
+                            注销
+                            <span class="glyphicon glyphicon-save">
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="address">
+                    <font class="font1">
+                        当前位置
+                    </font>
+                    <span class="glyphicon glyphicon-chevron-right">
+                    </span>
+                    <font class="font2">
+                        消息中心
+                    </font>
+                </div>
+                <div class="contact-news clearfix">
+                    <div class="nav-container">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active">
+                                <a href="#home" aria-controls="home" role="tab" data-toggle="tab">
+                                    全部
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab" id="yetButton">
+                                    未读
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab" id="alreadyButton">
+                                   已读
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content" id="allMessage">
+                            <div role="tabpanel" class="tab-pane active" id="home">
+
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="profile">
+                                <table class="table table-striped" id="yet">
+                                  
+                                </table>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="messages">
+                                <table class="table table-striped" id="already">
+
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script th:src="@{js/util/jquery-3.1.1.min.js}">
+        </script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script th:src="@{js/util/bootstrap.min.js}">
+        </script>
+        <script th:src="@{js/backstage/backstage-frame.js}"></script>
+        <script src="http://open.web.meitu.com/sources/xiuxiu.js" type="text/javascript"></script>
+        <script th:src="@{js/test/test.js}"></script>
+
+    </body>
+</html>

@@ -1,0 +1,75 @@
+$(function(){
+  $(".user").hover(function(){
+    $(".user-personal").css({display:"block"});
+  },function(){
+    $(".user-personal").css({display:"none"});
+  })
+  $(".user-personal").hover(function(){
+    $(this).css({display:"block"});
+  },function(){
+    $(this).css({display:"none"});
+  })
+  var i=0;
+  var j=0;
+  $("#Nav-btn").click(function(){
+    if(i%2==0){
+      $(this).css({color:"#fff"});
+      $(".Nav-words1").css({opacity:0});
+      $("#btn-bg").animate({opacity:0},function(){
+      $("#Nav").animate({width:65},100);
+      $("#Nav-div").animate({width:65},100);
+      $("#content").animate({marginLeft:65},100);
+    });
+    }
+    else{
+      $(this).css({color:"#23527c"});
+      $("#Nav").animate({width:230},100,function(){
+        $(".Nav-words1").animate({opacity:1})
+      });
+      $("#btn-bg").css({opacity:100});
+      $("#Nav-div").animate({width:230},100);
+      $("#content").animate({marginLeft:230},100);
+    }
+    i++
+  })
+  $("#Nav-btn2").click(function(){
+    if(j%2!=0){
+      $(this).css({color:"#fff"});
+      $(".Nav-words2").css({opacity:0});
+      $("#btn-bg2").animate({opacity:0},function(){
+      $("#Nav2").animate({width:65},100);
+      $("#black-bg").css({display:"none",opacity:0});
+    });
+    }
+    else{
+      $(this).css({color:"#23527c"});
+        $("#black-bg").css({display:"block",opacity:1});
+      $("#Nav2").animate({width:230},100,function(){
+        $(".Nav-words2").animate({opacity:1});
+      });
+      $("#btn-bg2").css({opacity:100});
+    }
+    j++
+  })
+  $("#black-bg").click(function(){
+    $("#Nav-btn2").css({color:"#fff"});
+      $(".Nav-words2").css({opacity:0});
+      $("#btn-bg2").animate({opacity:0},function(){
+      $("#Nav2").animate({width:65},100);
+      $("#black-bg").css({display:"none",opacity:0});
+    });
+    j++;  
+  })
+})
+$(window).resize(function(){
+  Width1=$(window).width();
+  Width2=$("#Nav2").width();
+  if(Width1>=900){
+    $("#black-bg").css({display:"none",opacity:0});
+  }
+  else{
+    if(Width2>100){
+      $("#black-bg").css({display:"block",opacity:1});
+    }
+  }
+})

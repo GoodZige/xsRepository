@@ -1,0 +1,97 @@
+.web-news{
+  width: 100%;
+  margin-top: 30px;
+}
+.web-news1,.web-news2,.web-news3,.web-news4{
+  width: calc(25% - 19px);
+  height: 180px;
+  float: left;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+  font-family: "微软雅黑";
+  font-size:24px;
+  padding-top: 50px;
+}
+.news-number{
+  font-size: 34px;
+}
+.web-news2,.web-news3,.web-news4{
+  margin-left: 25px;
+}
+.web-news1{
+  background:#ff4a43;
+}
+.web-news2{
+  background:#22beef;
+}
+.web-news3{
+  background:#a2d200;
+}
+.web-news4{
+  background:#8e44ad;
+}
+.web-change{
+  width: 100%;
+  background: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 30px;
+
+}
+.web-change h1{
+  color: #e74c3c;
+}
+.web-change textarea{
+  width: 100%;
+  height: 200px;
+  resize: none;
+  outline: none;
+  border-radius: 5px;
+}
+.web-change button{
+  width: 100px;
+  height: 30px;
+  margin-top: 5px;
+  padding: 0;
+  background: #EF4302;
+  border-radius: 5px;
+  border: 1px solid #ff730e;
+  box-shadow: 0 15px 30px 0 rgba(255,255,255,.25) inset, 0 2px 7px 0 rgba(0,0,0,.2);
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0,0,0,.1);
+  transition: all .2s;
+  outline: none;
+}
+.web-change button:hover{
+  background: #f04f10;
+}
+@media screen and (max-width: 900px){
+  .web-news1,.web-news2,.web-news3,.web-news4{
+    width: calc(50% - 13px);
+  }
+  .web-news3{
+    margin: 20px 20px 0 0;
+  }
+  .web-news4{
+    margin:20px 0 0 0;
+  }
+}
+Nav ul{
+  margin: 20px 0 0 0!important;
+  position: relative;
+  left: calc(50% - 124px);
+}
+@media screen and (max-width: 500px){
+  .web-news1,.web-news2,.web-news3,.web-news4{
+    width: 100%;
+  }
+  .web-news2,.web-news3,.web-news4{
+    margin:20px 0 0 0;
+  }
+  .web-change h1{
+    font-size: 26px;
+  }
+}
