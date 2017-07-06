@@ -13,6 +13,7 @@
         <link th:href="@{css/bootstrap.min.css}" rel="stylesheet"/>
         <link th:href="@{css/backstage/backstage2.css}" rel="stylesheet"/>
         <link th:href="@{css/backstage/backstage-frame.css}" rel="stylesheet"/>
+        <link th:href="@{css/backstage/z_backstage2.css}" rel="stylesheet"/>
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -69,7 +70,7 @@
                         <span class="glyphicon glyphicon-envelope" aria-hidden="true">
                         </span>
                         <div class="Nav-words1">
-                            消息中心
+                            用户管理
                         </div>
                     </a>
                 </li>
@@ -127,7 +128,7 @@
                         <span class="glyphicon glyphicon-envelope" aria-hidden="true">
                         </span>
                         <div class="Nav-words2">
-                            消息中心
+                            用户管理
                         </div>
                     </a>
                 </li>
@@ -252,7 +253,7 @@
                     <span class="glyphicon glyphicon-chevron-right">
                     </span>
                     <font class="font2">
-                        消息中心
+                        用户管理
                     </font>
                 </div>
                 <div class="contact-news clearfix">
@@ -278,7 +279,68 @@
                         <!-- Tab panes -->
                         <div class="tab-content" id="allMessage">
                             <div role="tabpanel" class="tab-pane active" id="home">
-
+                                <div class="singleUser">
+                                    <img src="http://ompbl6yqp.bkt.clouddn.com/FoVTd1Z9gS-S35j2dv6k_1ss5kau" class="headImg"/>
+                                    <div class="information">
+                                        <p id="name">姓名</p>
+                                        <p id="email">邮箱</p>
+                                        <p id="r_date">注册时间</p>
+                                    </div>
+                                    <div class="detail">
+                                        <table class="table">
+                                            <tr>
+                                                <th>用户组</th>
+                                                <th>等级/经验</th>
+                                                <th>被举报次数</th>
+                                                <th>未通过审核作品</th>
+                                                <th>作品数量</th>
+                                                <th>词条数量</th>
+                                                <th>关注/粉丝</th>
+                                                <th>最近登陆时间</th>
+                                            </tr>
+                                            <tr>
+                                                <td>用户组</td>
+                                                <td>等级/经验</td>
+                                                <td>被举报次数</td>
+                                                <td>未通过审核作品</td>
+                                                <td>作品数量</td>
+                                                <td>词条数量</td>
+                                                <td>关注/粉丝</td>
+                                                <td>最近登陆时间</td>
+                                            </tr>
+                                        </table>
+                                        <div class="col-lg-3">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="修改密码"/>
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-default" type="button">修改</button>
+                                                </span>
+                                            </div><!-- /input-group -->
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="修改等级/经验"/>
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-default" type="button">修改</button>
+                                                </span>
+                                            </div><!-- /input-group -->
+                                        </div>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default">用户组</button>
+                                            <button type="button" class="btn btn-default dropdown-toggle"
+                                                    data-toggle="dropdown">
+                                                <span class="caret"></span>
+                                                <span class="sr-only">切换下拉菜单</span>
+                                            </button>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a href="#">管理员</a></li>
+                                                <li><a href="#">用户</a></li>
+                                            </ul>
+                                        </div>
+                                        <button class="btn btn-default">清空被举报次数</button>
+                                        <button class="btn btn-default">封禁此用户</button>
+                                    </div>
+                                </div>
                             </div>
                             <div role="tabpanel" class="tab-pane" id="profile">
                                 <table class="table table-striped" id="yet">
@@ -302,7 +364,6 @@
         <script th:src="@{js/util/bootstrap.min.js}">
         </script>
         <script th:src="@{js/backstage/backstage-frame.js}"></script>
-        <script src="http://open.web.meitu.com/sources/xiuxiu.js" type="text/javascript"></script>
         <script th:src="@{js/test/test.js}"></script>
 
     </body>

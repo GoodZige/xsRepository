@@ -1,0 +1,16 @@
+.singleUser{
+    float: left;
+}
+.information{
+    float: left;
+}
+.headImg{
+    width: 100px;
+    height: 100px;
+    float: left;
+    display: inline-block;
+}
+.detail{
+    float: left;
+}
+

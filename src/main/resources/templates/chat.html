@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>聊天</title>
+
+    <!-- Bootstrap -->
+    <link th:href="@{css/bootstrap.min.css}" rel="stylesheet"/>
+    <link th:href="@{css/font-awesome.min.css}" rel="stylesheet"/>
+    <link th:href="@{css/chat.css}" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="chat-window">
+      <div class="window-l">
+          <div class="window-l-top">
+            <a class="search-btn" href="#javascript">
+              <i class="icon-search"></i>
+            </a>
+            <input class="search-input" type="text"/>
+          </div>
+          <div class="people-choice clearfix">
+            <ul id="peopleList">
+              <p class="no-result">搜索结果不存在</p>
+              <li>
+                <div class="people-img ding"></div>
+                <p class="people-name">丁欢喜</p>
+                <p class="chat-preview">你好，我是丁欢喜</p>
+                <p class="unread-news">99+</p>
+              </li>
+            </ul>
+          </div>
+      </div>
+      <div class="window-r">
+        <div class="window-r-top">
+            <a class="people-img-r" href="#javascript">
+            </a>
+            <p>该用户已成仙</p>
+        </div>
+        <div class="chat-content">
+          <div class="other-chat-container clearfix">
+            <div class="other-img"></div>
+            <p class="other-content">你好我是来自星星的丁绿龟，我曾居住于2#613，你也可以叫我丁欢喜，请问你的名字是什么，我们能做个朋友吗，哈哈哈哈哈啊哈哈哈哈！！！</p>
+          </div>
+          <div class="my-chat-container clearfix">
+            <div class="my-img"></div>
+            <p class="my-content">
+              你怕是石乐志吧，我是你爹你都忘了？你这不孝子
+            </p>
+          </div>
+        </div>
+        <div class="input-container">
+          <div id="editor">
+          </div>
+          <button class="send-btn">
+            发送
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script th:src="@{js/util/jquery-3.1.1.min.js}"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script th:src="@{js/util/bootstrap.min.js}"></script>
+    <script th:src="@{js/util/wangEditor.min.js}"></script>
+    <script type="text/javascript">
+        var E = window.wangEditor
+        var editor = new E('#editor')
+        // 或者 var editor = new E( document.getElementById('#editor') )
+        editor.customConfig.menus = [
+          'emoticon',  // 表情
+        ]
+        editor.create()
+    </script>
+    <script th:src="@{js/util/sockjs.min.js}"></script>
+    <script th:src="@{js/util/stomp.min.js}"></script>
+    <script th:src="@{js/chat/z_chat.js}"></script>
+    <script th:src="@{js/chat/chat.js}"></script>
+
+  </body>
+</html>

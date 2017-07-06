@@ -2,6 +2,7 @@ package com.xs.controller;
 
 import com.xs.domain.Item;
 import com.xs.repository.ItemRepository;
+import com.xs.repository.MessageRepository;
 import com.xs.service.ItemService;
 import com.xs.service.impl.ItemServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,6 +25,7 @@ public class MainController {
 
     @Autowired
     private ItemService itemService;
+
 
     @RequestMapping("/food")
     public String toFood(){
@@ -49,4 +51,9 @@ public class MainController {
     public String toBackstage2(){
         return "/backstage2";
     }
+    @RequestMapping("chat")
+    public String toChat(){
+        return "/chat";
+    }
+
 }
