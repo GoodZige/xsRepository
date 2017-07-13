@@ -27,7 +27,7 @@ public class MainController {
     private ItemService itemService;
 
 
-    @RequestMapping("/food")
+    @RequestMapping("food")
     public String toFood(){
         return "/food";
     }

@@ -32,29 +32,24 @@ public class WsController {
 
     @RequestMapping("sendMessage")
     @ResponseBody
-    public void sendMessage(@RequestParam(value = "writer") String writer,
+    public Date sendMessage(@RequestParam(value = "writer") String writer,
                             @RequestParam(value = "receiver") String receiver,
                             @RequestParam(value = "content") String content){
-        String head = detailService.findByName(writer).getHead();
-
-        Date date = new Date();
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        String now = sdf.format(date);
-
-        Map map = new HashMap();
-        map.put("writer",writer);
-        map.put("content",content);
-        map.put("date",now);
-        map.put("head",head);
-        messagingTemplate.convertAndSendToUser(receiver,"/message",map);
+        return messageService.saveAndSendMessage(writer,receiver,content);
     }
 
     @RequestMapping("historyMessage")
     @ResponseBody
     public List<Message> getHistoryMessage(@RequestParam(value = "receiver") String receiver,
                                            @RequestParam(value = "writer") String writer){
-        List<Message> list1 = messageService.findByWriter_name(writer);
+        List<Message> list1 = messageService.findByReceiver_name(writer);
         list1.addAll(messageService.findByWriter_name(receiver));
         return list1;
+    }
+    @RequestMapping("readMessage")
+    @ResponseBody
+    public void readMessage(@RequestParam(value = "writer") String writer,
+                            @RequestParam(value = "receiver") String receiver){
+        messageService.updateMessageFlag(writer,receiver);
     }
 }

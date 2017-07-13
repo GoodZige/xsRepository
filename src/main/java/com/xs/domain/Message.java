@@ -21,6 +21,15 @@ public class Message {
     @ManyToOne
     private Detail writer;
     private Date date;
+    private Integer flag;//0为未读 1为已读
+
+    public Integer getFlag() {
+        return flag;
+    }
+
+    public void setFlag(Integer flag) {
+        this.flag = flag;
+    }
 
     public Integer getId() {
         return id;
