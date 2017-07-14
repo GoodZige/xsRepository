@@ -194,7 +194,7 @@ function showChat(writer,content,date,head) {
             var writer = $(this).find(".people-name").text();
             pushChat.sort(function (a, b) {
                 var aDate = new Date(a.date);
-                var bDate = new Date(b.date)
+                var bDate = new Date(b.date);
                 return aDate-bDate;
             });
             for (var i=0;i<pushChat.length;i++){

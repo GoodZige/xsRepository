@@ -15,14 +15,14 @@
   </head>
   <body>
   <div id="login">
-    <h1>登录</h1>
-    <div class="username username-login clearfix">
+    <h1>Login</h1>
+    <div class="username username-login">
       <span class="glyphicon glyphicon-user"></span>
-      <input type="text" placeholder="用户名:" maxlength="8"/>
+      <input type="text" placeholder="用户名:" maxlength="8" id="username_l"/>
     </div>
-    <div class="password password-login clearfix">
+    <div class="password password-login">
       <span class="glyphicon glyphicon-pencil"></span>
-      <input type="password" placeholder="密码:" maxlength="12"/>
+      <input type="password" placeholder="密码:" maxlength="12" id="password_l"/>
     </div>
     <button class="loginB"></button>
     <a href="#javascript" class="exit-login">
@@ -31,48 +31,48 @@
     <p class="prompt-login">*该字段不能为空</p>
     <a href="#javascript" class="forget">找回密码</a>
   </div>
-    <div id="register">
-      <h1>注册</h1>
-      <div class="username username-register clearfix">
-        <span class="glyphicon glyphicon-user"></span>
-        <input type="text" placeholder="用户名:" maxlength="8"/>
-      </div>
-      <div class="password password-register clearfix">
-        <span class="glyphicon glyphicon-pencil"></span>
-        <input type="password" placeholder="密码:" maxlength="12"/>
-      </div>
-      <div class="password-again clearfix">
-        <span class="glyphicon glyphicon-tags"></span>
-        <input type="password" placeholder="确认密码:" maxlength="12"/>
-      </div>
-      <div class="email clearfix">
-        <span class="glyphicon glyphicon-envelope"></span>
-        <input type="text" placeholder="邮箱:"/>
-      </div>
-      <div class="verification clearfix">
-        <span class="glyphicon glyphicon-eye-open"></span>
-        <input type="text" placeholder="验证码:" maxlength="6"/>
-        <button class="verification-btn">发送</button>
-      </div>
-      <button class="registerB"></button>
-      <a href="#javascript" class="exit-register">
-        <span class="glyphicon glyphicon-remove"></span>
-      </a>
-      <p class="prompt-register">*该字段不能为空</p>
+  <div id="register">
+    <h1>Register</h1>
+    <div class="username username-register">
+      <span class="glyphicon glyphicon-user"></span>
+      <input type="text" placeholder="用户名:" maxlength="8" id="username"/>
     </div>
-    <div class="login-register">
-      <div class="login-register-btns">
-          <a href="#javascript" class="login-btn">登录</a>
-          <a href="#javascript" class="register-btn">注册</a>
-          <a href="#javascript" class="user-operation">
-            <p>LiZhiHao</p>
-            <span class="glyphicon glyphicon-chevron-down"></span>
-          </a>
-      </div>
-      <a href="#javscript" class="user-btn">
-        <span class="glyphicon glyphicon-user"></span>
+    <div class="password password-register">
+      <span class="glyphicon glyphicon-pencil"></span>
+      <input type="password" placeholder="密码:" maxlength="12" id="password"/>
+    </div>
+    <div class="password-again">
+      <span class="glyphicon glyphicon-tags"></span>
+      <input type="password" placeholder="确认密码:" maxlength="12" id="password_again"/>
+    </div>
+    <div class="email">
+      <span class="glyphicon glyphicon-envelope"></span>
+      <input type="text" placeholder="邮箱:" id="email"/>
+    </div>
+    <div class="verification">
+      <span class="glyphicon glyphicon-eye-open"></span>
+      <input type="text" placeholder="验证码:" maxlength="6" id="verification"/>
+      <button class="verification-btn">发送</button>
+    </div>
+    <button class="registerB"></button>
+    <a href="#javascript" class="exit-register">
+      <span class="glyphicon glyphicon-remove"></span>
+    </a>
+    <p class="prompt-register">*该字段不能为空</p>
+  </div>
+  <div class="login-register">
+    <div class="login-register-btns">
+      <a href="#javascript" class="login-btn">登录</a>
+      <a href="#javascript" class="register-btn">注册</a>
+      <a href="#javascript" class="user-operation">
+        <p id="showUsername"></p>
+        <span class="glyphicon glyphicon-chevron-down"></span>
       </a>
     </div>
+    <a href="#javscript" class="user-btn">
+      <span class="glyphicon glyphicon-user"></span>
+    </a>
+  </div>
     <div class="user-news">
       <a href="#javascript" class="personal">
          <span class="glyphicon glyphicon-home"></span>个人中心

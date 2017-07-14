@@ -55,7 +55,7 @@ public class MessageServiceImpl implements MessageService{
     public Date saveAndSendMessage(String writer, String receiver, String content) {
         Detail writerDetail = detailService.findByName(writer);
         Detail receiverDetail = detailService.findByName(receiver);
-        String head = receiverDetail.getHead();
+        String head = writerDetail.getHead();
 
         Date date = new Date();
         SimpleDateFormat sdf = new SimpleDateFormat("MM-dd-yyyy HH:mm:ss");

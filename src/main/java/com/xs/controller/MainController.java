@@ -29,7 +29,7 @@ public class MainController {
 
     @RequestMapping("food")
     public String toFood(){
-        return "/food";
+        return "food";
     }
     @ResponseBody
     @RequestMapping("getItemDetail")//用于返回自动补全所需数据
@@ -45,15 +45,15 @@ public class MainController {
     }
     @RequestMapping("backstage1")
     public String toBackstage1(){
-        return "/backstage1";
+        return "backstage1";
     }
     @RequestMapping("backstage2")
     public String toBackstage2(){
-        return "/backstage2";
+        return "backstage2";
     }
     @RequestMapping("chat")
     public String toChat(){
-        return "/chat";
+        return "chat";
     }
 
 }
