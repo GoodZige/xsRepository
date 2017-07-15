@@ -1,0 +1,427 @@
+body{
+    font-size: 14px;
+    font-family: "微软雅黑";
+    background: #eee;
+}
+/*-----------------------------------------------------清浮动-----------------------------------------------------*/
+
+.clearfix:before, .clearfix:after {
+    display: table;
+    content: '';
+}
+
+.clearfix:after {
+    clear: both;
+}
+/*------------------------------------------------------顶部-------------------------------------------*/
+#top{
+    width: 100%;
+    height: 300px;
+    background: #198C8A;
+    padding-top: 40px;
+}
+#top .back{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 15px;
+    top: 5px;
+    transition: .4s all ease-in-out;
+} 
+#top .back a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 40px;
+}
+#top .back:hover{
+    left: 5px;
+}
+#top .back a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.circle-border{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border:2px solid #fff;
+    padding: 3.6px 0 0 3.6px;
+    margin:0 auto;
+} 
+.head-img{
+    width: 140px;
+    height: 140px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-image: url(../imgs/head-img.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+.head-img a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+#top .user-name{
+    width: 100%;
+    position: none;
+    text-align: center;
+    margin-top: 5px;
+    text-indent: 0;
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: #fff;
+    padding-top: 15px;
+}
+#top .user-name p{
+    display: inline;
+    float: none;
+}
+#top .user-sex{
+    width: 24px;
+    height: 24px;    
+    background-image: url(http://olf10efjb.bkt.clouddn.com/man-icon.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    position: relative;
+    left: 5px;
+    top: 1px;
+    display: inline-block;
+    float: none;
+}
+/*----------------------------------------------内容------------------------------------------------*/
+#content{
+    width: 90%;
+    height: 1000px;
+    background: #fff;
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-top: 40px;
+    padding: 30px 30px;
+}
+#content > ul.nav{
+    border-bottom:2px solid #00D1A4;
+}
+#content > ul.nav > li a:hover,#content > ul > li a:link,#content > ul > li a:active,#content > ul > li a:visited{
+    color: #00D1A4;
+}
+#content > ul.nav > li a:hover{
+    color: #fff;
+    background: #00D1A4;
+}
+#content > ul.nav > li a.a-address{
+    background: #00D1A4;
+    color:#fff;
+}
+.user-operation{
+    width: 100%;
+    height: 80px;
+    padding-top: 20px;
+}
+.user-operation a{
+    width: 100px;
+    height: 30px;
+    display: block;
+    background: #ff8e68;
+    color: #fff;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 2px;
+}
+.user-operation a:hover{
+    background: #F75C5C;
+}
+
+.message-container{
+    width: 100%;
+    height: 80px;
+    margin-bottom: 20px;
+    border-bottom:1px solid #f2f2f5;
+    float: left;
+    position:relative;
+}
+.others-head-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-image: url(http://ompbl6yqp.bkt.clouddn.com/FoVTd1Z9gS-S35j2dv6k_1ss5kau);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    float: left;
+}
+.others-head-img a{
+    width:100%;
+    height: 100%;
+    display: block;
+}
+.message-content{
+    margin-left: 60px;
+    text-indent: 20px;
+    padding-top: 3px;
+}
+.message-content a{
+    color: #555;
+    font-size: 16px;
+}
+.message-content p{
+    display: inline;
+}
+.message-content p.others-operation{
+    font-size: 16px;
+    color: #8590a6;
+}
+.message-content span.identity{
+    color: #8590a6;
+    font-size: 16px;
+}
+.message-content span.time{
+    float: right;
+    color: #999;
+}
+.message-content .news-btn{
+    float: right;
+    color: #999;
+    font-size: 12px;
+    text-decoration: none;
+}
+.message-content .news-btn:hover{
+    color: #198C8A;
+}
+
+.news-operation{
+    width: 90px;
+    height: 70px;
+    box-shadow: 0 0 8px #999;
+    background: #fff;
+    position: absolute;
+    z-index: 100;
+    right: 0;
+    bottom:-10px;
+    display: none;
+}
+.news-operation > ul{
+    padding-left: 0;
+    margin: 0;
+}
+.news-operation > ul > li{
+    width: 100%;
+    height: 35px;
+    list-style: none;
+    text-align: center;
+}
+.news-operation > ul > li a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: #999!important;
+    line-height: 35px;
+    text-decoration: none;
+}
+.news-operation ul li a:hover{
+    background: #f6f6f6;
+    color: #f7671d!important;
+}
+
+.reply-content{
+    color: #999;
+    line-height: 40px;
+}
+
+
+.food-work{
+    color: #ffc000!important;
+}
+.home-work{
+    color: #22CDD5!important;
+}
+.travel-work{
+    color: #329AEF!important;
+}
+
+/*----------------------------------------------------------------回复------------------------------------------------*/
+.reply-content a{
+    text-decoration: none;
+    color: #17ACC4;
+    text-indent: 0;
+}
+.reply-content span{
+    float: right;
+    margin-right: 5px;
+}
+.reply-content a.work{
+    float: right;
+}
+.reply-content a.work:hover{
+    text-decoration: underline;
+}
+.reply-content p{
+    margin-right: 8px;
+}
+.reply-content a i{
+    margin-right: 5px;
+}
+.reply-content a:hover{
+    color: #0396EF;
+}
+/*查看对话的窗口*/
+.reply-window{
+    width: 400px;
+    height: 415px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    position: fixed;
+    z-index: 999;
+    left: 50%;
+    margin-left: -200px;
+    top: 5%;
+    display: none;
+    opacity: 0;
+}
+.reply-window .top{
+    height: 50px;
+    background: #28bebd;
+    line-height: 50px;
+    font-size: 18px;
+    margin: 0 auto;
+    text-indent: 20px;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+    position: relative
+}
+.reply-window .top a.reply-exit{
+    color: #fff;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 0;
+    position: absolute;
+    top: 17px;
+    right:15px;
+}
+.reply-details{
+    width: 100%;
+    max-height: 300px;
+    overflow: auto;
+}
+
+.reply-details::-webkit-scrollbar-track {
+  background-color: #f6f6f6;
+  border-radius: 5px;
+}
+
+.reply-details::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
+.reply-details::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.reply-details ul{
+    margin:0;
+    padding-left: 0;
+}
+.reply-details ul li{
+    list-style: none;
+    float: left;
+    width: 100%;
+    height: 70px;
+    padding-top: 15px;
+    padding-left: 15px;
+    border-bottom:1px solid #f0f2f7;
+}
+.reply-details ul li:hover{
+    background: #f6f6f6;
+}
+.reply-details ul li .others-head-img{
+    width: 40px;
+    height: 40px;
+    float: left;
+}
+.reply-details ul li .head-img{
+    width: 40px;
+    height: 40px;
+    border:none!important;
+    float: left;
+}
+.reply-details ul li .reply-content{
+    line-height: 10px;
+    height: 100%;
+    margin-left: 40px;
+    text-indent: 10px;
+}
+.reply-details ul li .reply-content span{
+    float: left;
+}
+.reply-details ul li .reply-content a.user-name{
+    color: #555;
+    float: left;
+    text-indent: 10px;
+}
+.reply-details ul li .reply-content span{
+    color: #8590a6;
+    margin-right: 0;
+}
+.reply-details ul li .reply-content span.reply-operation{
+    float: left;
+}
+.reply-details ul li .reply-content a.user-name:hover{
+    text-decoration: underline;
+}
+.reply-details ul li .reply-content p{
+    width: 100%;
+    display: block;
+    float: left;
+    position: relative;
+    top: 15px;
+}
+/*发送框*/
+#editor .w-e-text-container{
+    width: 74%;
+    float: left;
+    height: 30px!important;
+    margin-top: 6px!important;
+    margin-left: 15px!important;
+    border: 1px solid #dcdcdc!important;
+}
+#editor .w-e-text-container .w-e-text{
+    text-indent: 3px;
+    overflow-y: auto;
+    color: #999;
+    line-height: 25px;
+}
+#editor .w-e-text-container .w-e-text p{
+    margin: 0;
+    margin-top: 2px;
+}
+.w-e-toolbar{
+    height: 20px;
+    background: transparent!important;
+    border:none!important;
+}
+.w-e-menu{
+    padding:4px 10px!important;
+}
+.w-e-panel-container{
+    width: 100%!important;
+    left: 0!important;
+    margin-left: 0!important;
+    top: -260px!important;
+}
+.send-btn{
+    width:60px;
+    height: 30px;
+    outline: none;
+    background: #28bebd;
+    border:none;
+    color: #fff;
+    border-radius: 5px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 6px;
+}

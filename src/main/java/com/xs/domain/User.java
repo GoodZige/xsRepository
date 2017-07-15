@@ -9,29 +9,38 @@ import javax.persistence.*;
 public class User {//登录所需用户信息，可关联具体信息
     @Id
     @GeneratedValue
-    private Integer id;
-    private String account;
+    private Long id;
+    private String username;
     private String password;
     private String email;
+    private int authority;//管理权限:0,1
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public int getAuthority() {
+        return authority;
+    }
+
+    public void setAuthority(int authority) {
+        this.authority = authority;
+    }
 
     @OneToOne(cascade = {CascadeType.ALL})
     @JoinColumn(name = "detail_id")
     private Detail detail;
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
-    }
-
-    public String getAccount() {
-        return account;
-    }
-
-    public void setAccount(String account) {
-        this.account = account;
     }
 
     public String getPassword() {

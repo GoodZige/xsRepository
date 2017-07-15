@@ -18,4 +18,9 @@ public class DetailServiceImpl implements DetailService {
     public Detail findByName(String name) {
         return detailRepository.findByName(name);
     }
+
+    @Override
+    public Detail save(Detail detail) {
+        return detailRepository.save(detail);
+    }
 }

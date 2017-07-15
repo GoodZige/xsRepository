@@ -7,4 +7,5 @@ import com.xs.domain.Detail;
  */
 public interface DetailService {
     public Detail findByName(String name);
+    public Detail save(Detail detail);
 }
